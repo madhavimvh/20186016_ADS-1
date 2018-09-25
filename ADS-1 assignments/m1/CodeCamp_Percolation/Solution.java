@@ -35,10 +35,10 @@ class Percolation {
      */
     private int opensize;
     /**
-    * create n-by-n grid, with all sites blocked.
-    *
-    * @param      n     { parameter_description }
-    */
+     * create n-by-n grid, with all sites blocked.
+     *
+     * @param      n1    The n 1
+     */
     Percolation(final int n1) {
         this.n = n1;
         this.opensize = 0;
@@ -75,7 +75,7 @@ class Percolation {
         }
     }
     /**
-    * open site (row, col) if it is not open already
+    * open site (row, col) if it is not open already.
     *
     * @param      row   The row
     * @param      col   The col
@@ -142,7 +142,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    public Solution() {
+    private Solution() {
     }
     /**
      * { function_description }.
