@@ -35,19 +35,19 @@ class Percolation {
      */
     private int opensize;
     /**
-    * create n-by-n grid, with all sites blocked
+    * create n-by-n grid, with all sites blocked.
     *
     * @param      n     { parameter_description }
     */
-    public Percolation(final int n) {
-        this.n = n;
+    Percolation(final int n1) {
+        this.n = n1;
         this.opensize = 0;
-        this.size = n * n;
+        this.size = n1 * n1;
         this.top = size;
         this.bottom = size + 1;
         this.arr = new boolean[size];
         this.wtarr = new WeightedQuickUnionUF(size + 2);
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n1; i++) {
             wtarr.union(top, i);
             wtarr.union(bottom, size - i - 1);
         }
@@ -60,7 +60,7 @@ class Percolation {
      *
      * @return     { description_of_the_return_value }
      */
-    public int IndexOf(final int i, final int j) {
+    public int indexOf(final int i, final int j) {
         return n * (i - 1) + (j - 1);
     }
     /**
@@ -74,14 +74,14 @@ class Percolation {
             wtarr.union(row, col);
         }
     }
-    //
-    // open site (row, col) if it is not open already
-    //
-    // @param      row   The row
-    // @param      col   The col
-    //
+    /**
+    * open site (row, col) if it is not open already
+    *
+    * @param      row   The row
+    * @param      col   The col
+    */
     public void open(final int row, final int col) {
-        int index = IndexOf(row, col);
+        int index = indexOf(row, col);
         arr[index] = true;
         int bottomrow = index + n;
         int toprow = index - n;
@@ -118,11 +118,11 @@ class Percolation {
      * @return     True if open, False otherwise.
      */
     public boolean isOpen(final int row, final int col) {
-        return arr[IndexOf(row, col)];
+        return arr[indexOf(row, col)];
     }
-    /**     
+    /**
      @return     { description_of_the_return_value }.
-     */ 
+     */
     public     int numberOfOpenSites() {
         return opensize;
     }
@@ -135,12 +135,25 @@ class Percolation {
         return wtarr.connected(top, bottom);
     }
 }
+/**
+ * class  for solution.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    public Solution() {
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         Percolation perc = new Percolation(n);
-        while(scan.hasNext()) {
+        while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             perc.open(Integer.parseInt(tokens[0]),
                 Integer.parseInt(tokens[1]));
