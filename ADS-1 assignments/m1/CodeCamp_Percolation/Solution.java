@@ -47,13 +47,15 @@ class Percolation {
    		if (toprow > 0) {
    			connectOpensites(index, toprow);
    		}
-   		if (col == 0) {
+   		if (col == 1) {
    			if (col != n) {
    				connectOpensites(index, index + 1);
    			}
+   			return;
    		}
    		if (col == n) {
    			connectOpensites(index, index - 1);
+   			return;
    		}
    		connectOpensites(index, index + 1);
    		connectOpensites(index, index - 1);
