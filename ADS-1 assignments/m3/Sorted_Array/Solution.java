@@ -16,7 +16,7 @@ public class Solution {
 		if (n2 > 0) {
 		arr2 = scan.nextLine().split(",");
 		} else {
-			arr2 = null;
+			scan.nextLine();
 		}
 		Sortedarr array = new Sortedarr(arr1, arr2);
 		System.out.println(Arrays.toString(array.result())); 
