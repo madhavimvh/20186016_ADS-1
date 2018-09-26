@@ -8,8 +8,16 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n1 = Integer.parseInt(scan.nextLine());
 		int n2 = Integer.parseInt(scan.nextLine());
-		String[] arr1 = scan.nextLine().split(",");
-		String[] arr2 = scan.nextLine().split(",");
+		String[] arr1 = new String[n1];
+		String[] arr2 = new String[n2];
+		if (n1 > 0) {
+		arr1 = scan.nextLine().split(",");		
+		}
+		if (n2 > 0) {
+		arr2 = scan.nextLine().split(",");
+		} else {
+			arr2 = null;
+		}
 		Sortedarr array = new Sortedarr(arr1, arr2);
 		System.out.println(Arrays.toString(array.result())); 
 	}
@@ -29,9 +37,13 @@ class Sortedarr {
 		int k = 0;
 		while (i < arr1.length && j < arr2.length) {
 			if (Integer.parseInt(arr1[i]) < Integer.parseInt(arr2[j])) {
-				arr[k++] = arr[i++]; 
+				System.out.println(Integer.parseInt(arr1[i]));
+				System.out.println(Integer.parseInt(arr2[i]));
+				arr[k++] = arr[i];
+				i++;
 			} else {
-				arr[k++] = arr[j++];
+				arr[k++] = arr[j];
+				j++;
 			}
 		while (i < arr1.length) {
 			arr[k++] = arr1[i++];
