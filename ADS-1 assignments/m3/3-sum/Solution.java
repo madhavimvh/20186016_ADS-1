@@ -33,9 +33,20 @@ public final class Solution {
  * Class for threesum.
  */
 class Threesum {
+    /**
+     * { var_description }.
+     */
     private int[] array;
+    /**
+     * { var_description }.
+     */
     private int count;
-    public Threesum(final int[] array1) {
+    /**
+     * Constructs the object.
+     *
+     * @param      array1  The array 1
+     */
+    Threesum(final int[] array1) {
         this.array = array1;
         this.count = 0;
     }
