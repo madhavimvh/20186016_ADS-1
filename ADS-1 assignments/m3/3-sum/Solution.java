@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		// Threesum arr = new Threesum();
 		int n = Integer.parseInt(scan.nextLine());
 		int[] tokens = new int[n];
 		while (scan.hasNext()) {
@@ -11,7 +12,10 @@ public class Solution {
 				tokens[i] = Integer.parseInt(scan.nextLine());	
 			}
 		}
-		System.out.println(Arrays.toString(tokens));
+		Threesum x = new Threesum(tokens);
+		System.out.println(x.sum());
+
+		// System.out.println(Arrays.toString(tokens));
 	}
 }
 class Threesum {
@@ -19,7 +23,7 @@ class Threesum {
 	private int count;
 	public Threesum(int[] array1) {
 		this.array = array1;
-		this.count = count;
+		this.count = 0;
 	}
 	public int sum() {
 		int sum = 0;
@@ -31,8 +35,10 @@ class Threesum {
 			}
 			if (binarysearch(sum1) != -1) {
 				count++;
+				System.out.println("df" + count);
 			}
 		}
+		System.out.println(count);
 		return count;
 	}
 	public int binarysearch(int x) {
@@ -44,6 +50,7 @@ class Threesum {
 			} else if (x > array[mid]) {
 				f = mid + 1;
 			} else {
+				System.out.println("mid" + mid);
 				return mid;
 			}
 		}
