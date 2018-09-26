@@ -12,6 +12,8 @@ public class Solution {
 		String[] arr2 = new String[n2];
 		if (n1 > 0) {
 		arr1 = scan.nextLine().split(",");		
+		} else {
+			scan.nextLine();
 		}
 		if (n2 > 0) {
 		arr2 = scan.nextLine().split(",");
@@ -27,7 +29,6 @@ class Sortedarr {
 	private String[] arr2;
 	private String[] arr;
 	public Sortedarr(String[] arrr1, String[] arrr2) {
-		System.out.println("lkkjjk");
 		this.arr1 = arrr1;
 		this.arr2 = arrr2;
 		this.arr = new String[arr1.length + arr2.length];
@@ -38,11 +39,8 @@ class Sortedarr {
 		int k = 0;
 		while (i < arr1.length && j < arr2.length) {
 			if (Integer.parseInt(arr1[i]) < Integer.parseInt(arr2[j])) {
-				System.out.println(Integer.parseInt(arr1[i]));
-				System.out.println(Integer.parseInt(arr2[i]));
 				arr[k++] = arr1[i];
 				i++;
-				System.out.println("lkj" + arr[k]);
 			} else {
 				arr[k++] = arr2[j];
 				j++;
