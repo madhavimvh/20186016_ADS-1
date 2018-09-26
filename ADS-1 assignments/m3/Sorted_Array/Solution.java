@@ -19,7 +19,7 @@ public class Solution {
 			scan.nextLine();
 		}
 		Sortedarr array = new Sortedarr(arr1, arr2);
-		System.out.println(Arrays.toString(array.result())); 
+		System.out.println(Arrays.toString(array.result()).replace("[", "").replace("]","").replace(" ", "")); 
 	}
 }
 class Sortedarr {
@@ -27,6 +27,7 @@ class Sortedarr {
 	private String[] arr2;
 	private String[] arr;
 	public Sortedarr(String[] arrr1, String[] arrr2) {
+		System.out.println("lkkjjk");
 		this.arr1 = arrr1;
 		this.arr2 = arrr2;
 		this.arr = new String[arr1.length + arr2.length];
