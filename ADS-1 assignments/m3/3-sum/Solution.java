@@ -3,12 +3,17 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
     }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         // Threesum arr = new Threesum();
@@ -16,7 +21,7 @@ public class Solution {
         int[] tokens = new int[n];
         while (scan.hasNext()) {
             for (int i = 0; i < n; i++) {
-                tokens[i] = Integer.parseInt(scan.nextLine());  
+                tokens[i] = Integer.parseInt(scan.nextLine());
             }
         }
         Threesum x = new Threesum(tokens);
@@ -35,7 +40,7 @@ class Threesum {
         this.count = 0;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -56,8 +61,9 @@ class Threesum {
         // System.out.println(count);
         return count;
     }
+
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      x     { parameter_description }
      *
