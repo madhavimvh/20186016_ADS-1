@@ -24,26 +24,27 @@ class Sortedarr {
 		this.arr = new String[arr1.length * arr2.length];
 	}
 	public String[] result() {
-		int k = 0;
 		int i = 0;
 		int j = 0;
+		int k = 0;
+		int x = 0;
 		int max = 0;
-		while (i < arr1.length || j < arr2.length) {
-			if (i < arr1.length) {
+		while (i < arr1.length) {
 			arr[k] = arr1[i];
-			}
-			if (j < arr2.length) {
-			arr[k + 1] = arr2[j];
-			}
-			if (Integer.parseInt(arr[k]) > Integer.parseInt(arr[k + 1])) {
-				max = Integer.parseInt(arr[k]);
-				arr[k] = arr[k + 1];
-				arr[k + 1] = String.valueOf(max);
-				// arr = Arrays.copyOf(arr, arr.length);
-			}
 			i++;
+			k++;
+		}
+		while (j < arr2.length) {
+			arr[k] = arr2[j];
 			j++;
 			k++;
+		}
+		while (x < arr.length) {
+		if (Integer.parseInt(arr[x]) > Integer.parseInt(arr[x + 1])) {
+			max = Integer.parseInt(arr[x]);
+			arr[x] = arr[x + 1];
+			arr[x + 1] = String.valueOf(max);
+		}
 		}
 		return arr;
 	}
