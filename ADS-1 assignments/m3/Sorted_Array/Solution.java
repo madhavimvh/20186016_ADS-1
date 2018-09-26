@@ -1,10 +1,18 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Solution {
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 	}
-	public static void main(String[] args) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n1 = Integer.parseInt(scan.nextLine());
 		int n2 = Integer.parseInt(scan.nextLine());
@@ -24,15 +32,38 @@ public class Solution {
 		System.out.println(Arrays.toString(array.result()).replace("[", "").replace("]","").replace(" ", "")); 
 	}
 }
+/**
+ * Class for sortedarr.
+ */
 class Sortedarr {
+	/**
+	 * { var_description }.
+	 */
 	private String[] arr1;
+	/**
+	 * { var_description }.
+	 */
 	private String[] arr2;
+	/**
+	 * { var_description }.
+	 */
 	private String[] arr;
-	public Sortedarr(String[] arrr1, String[] arrr2) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      arrr1  The arrr 1
+	 * @param      arrr2  The arrr 2
+	 */
+	public Sortedarr(final String[] arrr1, final String[] arrr2) {
 		this.arr1 = arrr1;
 		this.arr2 = arrr2;
 		this.arr = new String[arr1.length + arr2.length];
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String[] result() {
 		int i = 0;
 		int j = 0;
