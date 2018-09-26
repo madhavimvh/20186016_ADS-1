@@ -40,6 +40,7 @@ class Sortedarr {
 				// System.out.println(Integer.parseInt(arr1[i]));
 				// System.out.println(Integer.parseInt(arr2[i]));
 				arr[k++] = arr1[i];
+				System.out.println(arr[k]);
 				i++;
 			} else {
 				arr[k++] = arr2[j];
