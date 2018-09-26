@@ -31,7 +31,8 @@ public final class Solution {
             scan.nextLine();
         }
         Sortedarr array = new Sortedarr(arr1, arr2);
-        System.out.println(Arrays.toString(array.result()).replace("[", "").replace("]","").replace(" ", "")); 
+        System.out.println(Arrays.toString(array.result()).
+            replace("[", "").replace("]", "").replace(" ", ""));
     }
 }
 /**
@@ -56,7 +57,7 @@ class Sortedarr {
      * @param      arrr1  The arrr 1
      * @param      arrr2  The arrr 2
      */
-    public Sortedarr(final String[] arrr1, final String[] arrr2) {
+    Sortedarr(final String[] arrr1, final String[] arrr2) {
         this.arr1 = arrr1;
         this.arr2 = arrr2;
         this.arr = new String[arr1.length + arr2.length];
