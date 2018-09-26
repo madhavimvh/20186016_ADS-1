@@ -37,12 +37,12 @@ class Sortedarr {
 		int k = 0;
 		while (i < arr1.length && j < arr2.length) {
 			if (Integer.parseInt(arr1[i]) < Integer.parseInt(arr2[j])) {
-				System.out.println(Integer.parseInt(arr1[i]));
-				System.out.println(Integer.parseInt(arr2[i]));
-				arr[k++] = arr[i];
+				// System.out.println(Integer.parseInt(arr1[i]));
+				// System.out.println(Integer.parseInt(arr2[i]));
+				arr[k++] = arr1[i];
 				i++;
 			} else {
-				arr[k++] = arr[j];
+				arr[k++] = arr2[j];
 				j++;
 			}
 		while (i < arr1.length) {
