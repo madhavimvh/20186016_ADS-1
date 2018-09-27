@@ -23,7 +23,7 @@ class Stack {
 	}
 	public void push(char x) {
 		if (top == 99) {
-			System.out.println("Stack is full");			
+			System.out.println("YES");			
 		} else {
 			items[top++] = x;
 		}
