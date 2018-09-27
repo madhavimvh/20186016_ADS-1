@@ -47,9 +47,11 @@ class Linkedlist {
 		return '\0';
 	}
 	public int add(int n, int m) {
+		System.out.println(n + m);
 		return n + m;
 	}
 	public int mul(int m, int n) {
+		System.out.println(n * m);
 		return m * n;
 	}
 }
