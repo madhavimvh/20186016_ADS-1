@@ -78,6 +78,11 @@ class LinkedList {
         }
         return '\0';
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return (head == null);
     }
@@ -99,7 +104,7 @@ class Balanceparens {
      *
      * @param      input1  The input 1
      */
-    public Balanceparens(final String input1) {
+    Balanceparens(final String input1) {
         this.input = input1;
         this.linked = new LinkedList();
     }
@@ -118,7 +123,7 @@ class Balanceparens {
                 || input.charAt(i) == ']') {
                 if (linked.isEmpty()) {
                     return false;
-                } else if(matching(linked.pop(), input.charAt(i))) {
+                } else if (matching(linked.pop(), input.charAt(i))) {
                     return true;
                 }
             }
@@ -130,6 +135,14 @@ class Balanceparens {
         // }
         return (linked.isEmpty());
     }
+    /**
+     * { function_description }.
+     *
+     * @param      char1  The character 1
+     * @param      char2  The character 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean matching(final char char1, final char char2) {
         if (char1 == '(' && char1 == ')') {
             return true;
