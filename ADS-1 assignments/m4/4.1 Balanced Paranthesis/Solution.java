@@ -9,8 +9,8 @@ public class Solution {
 		while (sc.hasNext()) {
 			String input = sc.nextLine();
 		Balanceparens paren = new Balanceparens(input);
-			System.out.println(input);
-			paren.checkbraces();
+			// System.out.println(input);
+			System.out.println(paren.checkbraces());
 		}
 	}
 }
@@ -61,8 +61,8 @@ class Balanceparens {
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
 					return false;
-				} else {
-					return matching(stack.pop(), input.charAt(i));
+				} else if(matching(stack.pop(), input.charAt(i))) {
+					return true;
 				}
 			}
 		}
