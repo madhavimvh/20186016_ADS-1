@@ -53,23 +53,23 @@ class Balanceparens {
 		this.input = input1;
 		this.stack = new Stack();
 	}
-	public boolean checkbraces() {
+	public String checkbraces() {
 		for (int i = 0; i < input.length(); i++) {
 			if (input.charAt(i) == '(' || input.charAt(i) == '{' || input.charAt(i) == '[') {
 				stack.push(input.charAt(i));
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
-					return false;
+					return "YES";
 				} else if(matching(stack.pop(), input.charAt(i))) {
-					return true;
+					return "NO";
 				}
 			}
 		}
 		if (stack.isEmpty()) {
-			return true;
+			return "YES";
 		} else {
-			return false;
+			return "NO";
 		}
 	}
 	public boolean matching(char char1, char char2) {
