@@ -148,9 +148,10 @@ class Balanceparens {
             return true;
         } else if (char1 == '[' && char1 == ']') {
             return  true;
-        } return (char1 == '{' && char1 == '}');
-        // else {
-        //     return false;
-        // }
+        } else if (char1 == '{' && char1 == '}') {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
