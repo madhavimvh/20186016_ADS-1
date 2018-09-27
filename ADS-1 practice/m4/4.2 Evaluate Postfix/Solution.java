@@ -1,7 +1,19 @@
 import java.util.Scanner;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * class for Solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Linkedlist list = new Linkedlist();
 		String[] arr = sc.nextLine().split(" ");
@@ -28,19 +40,42 @@ public class Solution {
 		System.out.println(x);
 	}
 }
+/**
+ * Class for linkedlist.
+ */
 class Linkedlist {
+	/**
+	 * { var_description }.
+	 */
 	private Node head;
+	/**
+	 * Class for node.
+	 */
 	private class Node {
+		/**
+		 * { var_description }.
+		 */
 		private int item;
+		/**
+		 * { var_description }.
+		 */
 		private Node next;
 		// Node (int item) {
 		// 	this.item = item;
 		// }
 	}
+	/**
+	 * Constructs the object.
+	 */
 	Linkedlist() {
 		this.head = null;
 	}
-	public void push(int value) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      value  The value
+	 */
+	public void push(final int value) {
 		// System.out.println("kjbkj");
 		// System.out.println(value);
 		Node oldhead = head;
@@ -48,6 +83,11 @@ class Linkedlist {
 		head.item = value;
 		head.next = oldhead;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int pop() {
 		if (head != null) {
 			int value = head.item;
@@ -57,10 +97,26 @@ class Linkedlist {
 		}
 		return '\0';
 	}
-	public int add(int n, int m) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      m     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int add(final int n, final int m) {
 		return n + m;
 	}
-	public int mul(int m, int n) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      m     { parameter_description }
+	 * @param      n     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int mul(final int m, final int n) {
 		// System.out.println(n * m);
 		return m * n;
 	}
