@@ -5,39 +5,42 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		Linkedlist list = new Linkedlist();
 		String[] arr = sc.nextLine().split(" ");
+		int x = 0;
 		for (int i = 0; i < arr.length; i++) {
 			switch(arr[i]) {
 				case "*":
-				list.mul(list.pop(), list.pop());
+				x = list.mul(list.pop(), list.pop());
+				list.push(x);
 				break;
 				case "+":
-				list.add(list.pop(), list.pop());
+				x = list.add(list.pop(), list.pop());
+				list.push(x);
 				break;
 				default:
 				list.push(Integer.parseInt(arr[i]));
 				break;
-
 			}
+			System.out.println(x);
 		}		
 	}
 }
 class Linkedlist {
 	private Node head;
 	private class Node {
-		private char item;
+		private int item;
 		private Node next;
 	}
 	Linkedlist() {
 		this.head = null;
 	}
-	public void push(char value) {
+	public void push(int value) {
 		Node oldhead = head;
 		head = new Node();
 		head.item = value;
 	}
-	public char pop() {
+	public int pop() {
 		if (head != null) {
-			char value = head.item;
+			int value = head.item;
 			head = head.next;
 			return value;
 		}
