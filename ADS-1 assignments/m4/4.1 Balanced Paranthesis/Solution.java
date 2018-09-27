@@ -60,16 +60,16 @@ class Balanceparens {
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
-					return "NO";
+					return "NOoooooo";
 				} else if(matching(stack.pop(), input.charAt(i))) {
-					return "YES";
+					return "YESssssss";
 				}
 			}
 		}
 		if (stack.isEmpty()) {
-			return "YES";
+			return "YES!!!";
 		} else {
-			return "NO";
+			return "NO!!!!";
 		}
 	}
 	// public String toString() {
