@@ -23,7 +23,7 @@ class Stack {
 	}
 	public void push(char x) {
 		if (top == 99) {
-			System.out.println("YES...........");			
+			System.out.println("YES");			
 		} else {
 			items[top++] = x;
 		}
@@ -60,16 +60,16 @@ class Balanceparens {
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
-					return "NOoooooo";
+					return "NO";
 				} else if(matching(stack.pop(), input.charAt(i))) {
-					return "YESssssss";
+					return "YES";
 				}
 			}
 		}
 		if (stack.isEmpty()) {
-			return "YES!!!";
+			return "YES";
 		} else {
-			return "NO!!!!";
+			return "NO";
 		}
 	}
 	// public String toString() {
