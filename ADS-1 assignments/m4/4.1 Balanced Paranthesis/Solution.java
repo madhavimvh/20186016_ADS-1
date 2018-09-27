@@ -78,6 +78,11 @@ class LinkedList {
         }
         return '\0';
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return (head == null);
     }
@@ -143,8 +148,7 @@ class Balanceparens {
             return true;
         } else if (char1 == '[' && char1 == ']') {
             return  true;
-        } return char1 == '{' && char1 == '}';
-        
+        } return (char1 == '{' && char1 == '}');
         // else {
         //     return false;
         // }
