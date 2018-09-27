@@ -13,15 +13,18 @@ public class Solution {
 				list.push(x);
 				break;
 				case "+":
+				System.out.println("jlj" + list.pop());
+				System.out.println("kjh" + list.pop());
 				x = list.add(list.pop(), list.pop());
 				list.push(x);
 				break;
 				default:
+				System.out.println("kjbkj" + arr[i]);
 				list.push(Integer.parseInt(arr[i]));
 				break;
 			}
-			System.out.println(x);
 		}		
+		System.out.println(x);
 	}
 }
 class Linkedlist {
@@ -47,10 +50,12 @@ class Linkedlist {
 		return '\0';
 	}
 	public int add(int n, int m) {
+		System.out.println("ljfd");
 		System.out.println(n + m);
 		return n + m;
 	}
 	public int mul(int m, int n) {
+		System.out.println("sdfh");
 		System.out.println(n * m);
 		return m * n;
 	}
