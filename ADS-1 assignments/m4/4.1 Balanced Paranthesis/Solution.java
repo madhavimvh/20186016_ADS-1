@@ -18,59 +18,54 @@ public class Solution {
 		}
 	}
 }
-class Stack {
-	private int top;
-	private char[] items;
-	public Stack() {
-		top = 0;
-		items = new char[100];
+class LinkedList {
+	private Node head;
+	private class Node {
+		private char item;
+		private Node next;
 	}
-	public void push(char x) {
-		if (top == 99) {
-			System.out.println("YES");			
-		} else {
-			items[top++] = x;
-		}
+	public LinkedList() {
+		this.head = null;
+	}
+	public void push(char value) {
+		Node oldHead = head;
+		head = new Node();
+		head.item = value;
+		head.next = oldHead;
 	}
 	public char pop() {
-		char element = '\0';
-		if (top == 0) {
-			System.out.println("Underflow error");
-			return '\0';
-		} else {
-			element = items[--top];
+		if (head != null) {
+			char value = head.item;
+			head = head.next;
+			return value;
 		}
-		return element;
+		return '\0';
 	}
 	public boolean isEmpty() {
-		if (top == 0) {
-			return true;
-		} else {
-			return false;
-		}
+		return (head == null);
 	}
 }
 class Balanceparens {
 	private String input;
-	private Stack stack;
+	private LinkedList linked;
 	public Balanceparens(String input1) {
 		this.input = input1;
-		this.stack = new Stack();
+		this.linked = new LinkedList();
 	}
 	public boolean checkbraces() {
 		for (int i = 0; i < input.length(); i++) {
 			if (input.charAt(i) == '(' || input.charAt(i) == '{' || input.charAt(i) == '[') {
-				stack.push(input.charAt(i));
+				linked.push(input.charAt(i));
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
-				if (stack.isEmpty()) {
+				if (linked.isEmpty()) {
 					return false;
-				} else if(matching(stack.pop(), input.charAt(i))) {
+				} else if(matching(linked.pop(), input.charAt(i))) {
 					return true;
 				}
 			}
 		}
-		if (stack.isEmpty()) {
+		if (linked.isEmpty()) {
 			return true;
 		} else {
 			return false;
