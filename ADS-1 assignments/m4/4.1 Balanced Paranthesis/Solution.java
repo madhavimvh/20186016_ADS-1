@@ -51,7 +51,7 @@ class LinkedList {
     /**
      * Constructs the object.
      */
-    public LinkedList() {
+    LinkedList() {
         this.head = null;
     }
     /**
@@ -123,11 +123,12 @@ class Balanceparens {
                 }
             }
         }
-        if (linked.isEmpty()) {
-            return true;
-        } else {
-            return false;
-        }
+        // if (linked.isEmpty()) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+        return (linked.isEmpty());
     }
     public boolean matching(final char char1, final char char2) {
         if (char1 == '(' && char1 == ')') {
