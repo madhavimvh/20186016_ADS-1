@@ -10,7 +10,11 @@ public class Solution {
 			String input = sc.nextLine();
 		Balanceparens paren = new Balanceparens(input);
 			// System.out.println(input);
-			System.out.println(paren.checkbraces());
+			if (paren.checkbraces()) {
+				System.out.println("YES");
+			} else {
+				System.out.println("NO");
+			}
 		}
 	}
 }
@@ -53,34 +57,25 @@ class Balanceparens {
 		this.input = input1;
 		this.stack = new Stack();
 	}
-	public String checkbraces() {
+	public boolean checkbraces() {
 		for (int i = 0; i < input.length(); i++) {
 			if (input.charAt(i) == '(' || input.charAt(i) == '{' || input.charAt(i) == '[') {
 				stack.push(input.charAt(i));
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
-					return "NO";
+					return false;
 				} else if(matching(stack.pop(), input.charAt(i))) {
-					return "YES";
+					return true;
 				}
 			}
 		}
 		if (stack.isEmpty()) {
-			return "YES";
+			return true;
 		} else {
-			return "NO";
+			return false;
 		}
 	}
-	// public String toString() {
-	// 	String s = "";
-	// 	if (checkbraces() == true) {
-	// 		s = "YES";
-	// 	} else if (checkbraces() == false) {
-	// 		s = "NO";
-	// 	}
-	// 	return s;
-	// }
 	public boolean matching(char char1, char char2) {
 		if (char1 == '(' && char1 == ')') {
 			return true;
