@@ -60,9 +60,9 @@ class Balanceparens {
 			}
 			if (input.charAt(i) == ')' || input.charAt(i) == '}' || input.charAt(i) == ']') {
 				if (stack.isEmpty()) {
-					return "YES";
-				} else if(matching(stack.pop(), input.charAt(i))) {
 					return "NO";
+				} else if(matching(stack.pop(), input.charAt(i))) {
+					return "YES";
 				}
 			}
 		}
@@ -72,6 +72,15 @@ class Balanceparens {
 			return "NO";
 		}
 	}
+	// public String toString() {
+	// 	String s = "";
+	// 	if (checkbraces() == true) {
+	// 		s = "YES";
+	// 	} else if (checkbraces() == false) {
+	// 		s = "NO";
+	// 	}
+	// 	return s;
+	// }
 	public boolean matching(char char1, char char2) {
 		if (char1 == '(' && char1 == ')') {
 			return true;
