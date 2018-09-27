@@ -32,25 +32,32 @@ class Linkedlist {
 	private class Node {
 		private int item;
 		private Node next;
+		// Node (int item) {
+		// 	this.item = item;
+		// }
 	}
 	Linkedlist() {
 		this.head = null;
 	}
 	public void push(int value) {
+		// System.out.print("push");
 		Node oldhead = head;
 		head = new Node();
 		head.item = value;
+		head.next = oldhead;
 	}
 	public int pop() {
 		if (head != null) {
 			int value = head.item;
 			head = head.next;
+			System.out.println(value);
 			return value;
 		}
 		return '\0';
 	}
 	public int add(int n, int m) {
-		System.out.println("ljfd");
+		System.out.println(n);
+		System.out.println(m);
 		System.out.println(n + m);
 		return n + m;
 	}
