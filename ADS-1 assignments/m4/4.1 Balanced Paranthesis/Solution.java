@@ -150,8 +150,7 @@ class Balanceparens {
             return  true;
         } else if (char1 == '{' && char1 == '}') {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }
