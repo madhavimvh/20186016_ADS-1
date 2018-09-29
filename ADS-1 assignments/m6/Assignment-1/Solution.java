@@ -42,8 +42,8 @@ class AddLargeNumbers {
     	while(!s1.isEmpty() && !s2.isEmpty()) {
     		a += s1.pop() + s2.pop() + carry;
     		carry = a/10;
-    		result.push(String.valueOf(a));
     	}
+    	result.push(String.valueOf(a));
     	return result;
 
 
