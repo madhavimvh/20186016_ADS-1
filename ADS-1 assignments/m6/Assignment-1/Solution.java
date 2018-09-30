@@ -29,8 +29,10 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	LinkedList result = new LinkedList();
-    	int a = 0;
-    	int carry = 0;
+    	String a = "";
+    	String carry = "";
+    	int sum = 0;
+    	String sum1 = "";
     	Stack s1 = new Stack();
     	Stack s2 = new Stack();
     	while (!list1.isEmpty()) {
@@ -40,14 +42,15 @@ class AddLargeNumbers {
     		s2.push(Integer.parseInt(list2.pop()));
     	}
     	while(!s1.isEmpty() && !s2.isEmpty()) {
-    		a += s1.pop() + s2.pop() + carry;
-    		carry = a/10;
+    		a = String.valueOf(s1.pop() + s2.pop());
+    		if (a.charAt(0) == '1') {
+    			sum = Integer.parseInt(a) + 1;
+    			sum1 += sum;
+    		} else {
+    			sum1 += sum;
+    		}
     	}
-    	result.push(String.valueOf(a));
     	return result;
-
-
-    	
     }
     public static int charToInt(char c) {
     	return Integer.parseInt(Character.toString(c));
