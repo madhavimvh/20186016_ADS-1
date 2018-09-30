@@ -50,6 +50,7 @@ class AddLargeNumbers {
     			sum1 += sum;
     		}
     	}
+    	result.push(sum1);
     	return result;
     }
     public static int charToInt(char c) {
