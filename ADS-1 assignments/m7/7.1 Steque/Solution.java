@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Node {
-		int item;
-		Node next;
+		private int item;
+		private Node next;
 		Node(int item, Node node) {
 			item = item;
 			next = node;
@@ -18,6 +18,9 @@ class Node {
 		public void setNext(Node node) {
 			next = node;
 		}
+		public String toString() {
+			return item + "";
+		}
 	}
 class Steque {
 	Node head;
@@ -33,9 +36,10 @@ class Steque {
 		Node oldhead = head;
 		head = new Node(element, oldhead);
 		if (oldhead == null) {
-			head = tail;
+			tail = head;
 		}
 		size++;
+		// System.out.println(head.getItem());
 	}
 	public void pop() {
 		if (head != null && tail != null) {
@@ -57,7 +61,6 @@ class Steque {
 			head = tail = new Node(element, null);
 		}
 		size++;
-		
 	}
 	public String toString() {
 		StringBuffer sb = new StringBuffer("");
@@ -68,13 +71,10 @@ class Steque {
 			Node temp = head;
 			while (temp != null) {
 			sb.append(temp + ", ");
-			System.out.println("kkj");
-			System.out.println(temp);
 			temp = temp.getNext();
 			}
+		return sb.toString().substring(0, sb.length());
 		}
-		System.out.println(sb);
-		return sb.toString().substring(0, sb.length() - 2);
 	}
 }
 public class Solution {
@@ -100,6 +100,7 @@ public class Solution {
 			break;
 			default:
 			steque = new Steque();
+			System.out.println();
 			break;
 		}
 		n--;
