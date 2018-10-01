@@ -127,8 +127,7 @@ class Steque {
             tail = new Node(element, null);
             oldtail.setNext(tail);
         } else if (head == null && tail == null) {
-            head = new Node(element, null);
-            tail = new Node(element, null);
+            head = tail = new Node(element, null);
         }
         size++;
     }
