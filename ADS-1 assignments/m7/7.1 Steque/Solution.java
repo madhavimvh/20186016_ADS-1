@@ -34,7 +34,6 @@ class Steque {
 		size = 0;
 	}
 	public void push(int element) {
-		System.out.println("jkj");
 		Node oldhead = head;
 		head = new Node(element, oldhead);
 		if (oldhead == null) {
@@ -74,9 +73,11 @@ class Steque {
 			Node temp = head;
 			while (temp != null) {
 			sb.append(temp + ", ");
-			head = head.getNext();
+			System.out.println(temp);
+			temp = temp.getNext();
 			}
 		}
+		System.out.println(sb);
 		return sb.toString().substring(0, sb.length() - 2);
 	}
 }
