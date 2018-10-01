@@ -72,8 +72,9 @@ class Steque {
 			while (temp != null) {
 			sb.append(temp + ", ");
 			temp = temp.getNext();
+			// System.out.println(head.getItem());
 			}
-		return sb.toString().substring(0, sb.length());
+		return sb.toString().substring(0, sb.length() - 2);
 		}
 	}
 }
