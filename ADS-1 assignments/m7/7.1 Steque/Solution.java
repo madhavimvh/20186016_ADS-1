@@ -34,6 +34,7 @@ class Steque {
 		size = 0;
 	}
 	public void push(int element) {
+		System.out.println("jkj");
 		Node oldhead = head;
 		head = new Node(element, oldhead);
 		if (oldhead == null) {
@@ -61,6 +62,7 @@ class Steque {
 		} else if (head == null && tail == null) {
 			head = tail = new Node(element, null);
 		}
+		size++;
 		
 	}
 	public String toString() {
@@ -77,7 +79,6 @@ class Steque {
 		}
 		return sb.toString().substring(0, sb.length() - 2);
 	}
-
 }
 public class Solution {
 	public static void main(String[] args) {
