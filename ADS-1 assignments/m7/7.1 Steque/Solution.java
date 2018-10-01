@@ -2,10 +2,6 @@ import java.util.Scanner;
 class Node {
 		int item;
 		Node next;
-		Node(int item) {
-			item = item;
-			next = null;
-		}
 		Node(int item, Node node) {
 			item = item;
 			next = node;
@@ -46,15 +42,14 @@ class Steque {
 			if (head.getNext() == null && tail.getNext() == null) {
 				head = tail = null;
 				size--;
-			} else {
+			} else if (head != null) {
 				head = head.getNext();
 				size--;
 			}
 		}
-		
 	}
 	public void enqueue(int element) {
-		if (head != null && tail != null) {
+		if (tail != null) {
 			Node oldtail = tail;
 			tail = new Node(element, null);
 			oldtail.setNext(tail);
@@ -73,6 +68,7 @@ class Steque {
 			Node temp = head;
 			while (temp != null) {
 			sb.append(temp + ", ");
+			System.out.println("kkj");
 			System.out.println(temp);
 			temp = temp.getNext();
 			}
