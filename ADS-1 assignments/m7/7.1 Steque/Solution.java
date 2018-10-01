@@ -32,7 +32,7 @@ class Node {
         /**
          * Sets the item.
          *
-         * @param      value  The value
+         * @param      valuee  The value
          */
         public void setItem(final int valuee) {
             this.value = valuee;
@@ -107,7 +107,8 @@ class Steque {
     public void pop() {
         if (head != null && tail != null) {
             if (head.getNext() == null && tail.getNext() == null) {
-                head = tail = null;
+                head = null;
+                tail = null;
                 size--;
             } else if (head != null) {
                 head = head.getNext();
@@ -126,7 +127,8 @@ class Steque {
             tail = new Node(element, null);
             oldtail.setNext(tail);
         } else if (head == null && tail == null) {
-            head = tail = new Node(element, null);
+            head = new Node(element, null);
+            tail = new Node(element, null);
         }
         size++;
     }
