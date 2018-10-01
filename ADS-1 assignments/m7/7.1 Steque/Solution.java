@@ -1,31 +1,31 @@
 import java.util.Scanner;
 class Node {
-		private int item;
+		private int value;
 		private Node next;
-		Node(int item, Node node) {
-			item = item;
-			next = node;
+		Node(int v, Node node) {
+			this.value = v;
+			this.next = node;
 		}
 		public int getItem() {
-			return item;
+			return this.value;
 		}
 		public void setItem(int value) {
-			item = value;
+			this.value = value;
 		}
 		public Node getNext() {
-			return next;
+			return this.next;
 		}
 		public void setNext(Node node) {
-			next = node;
+			this.next = node;
 		}
 		public String toString() {
-			return item + "";
+			return value + "";
 		}
 	}
 class Steque {
-	Node head;
-	Node tail;
-	int size;
+	private Node head;
+	private Node tail;
+	private int size;
 	
 	public Steque() {
 		head = null;
@@ -39,6 +39,7 @@ class Steque {
 			tail = head;
 		}
 		size++;
+		// System.out.println(element);
 		// System.out.println(head.getItem());
 	}
 	public void pop() {
