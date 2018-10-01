@@ -34,8 +34,8 @@ class Node {
          *
          * @param      value  The value
          */
-        public void setItem(final int value) {
-            this.value = value;
+        public void setItem(final int valuee) {
+            this.value = valuee;
         }
         /**
          * Gets the next.
@@ -78,11 +78,10 @@ class Steque {
      * size is of type int.
      */
     private int size;
-    
     /**
      * Constructs the object.
      */
-    public Steque() {
+    Steque() {
         head = null;
         tail = null;
         size = 0;
@@ -157,6 +156,11 @@ class Steque {
  */
 public final class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
+    /**
      * main function.
      *
      * @param      args  The arguments
@@ -168,7 +172,7 @@ public final class Solution {
         Steque steque = new Steque();
         while (sc.hasNext()) {
         String[] line = sc.nextLine().split(" ");
-        switch(line[0]) {
+        switch (line[0]) {
             case "push":
             steque.push(Integer.parseInt(line[1]));
             System.out.println(steque);
