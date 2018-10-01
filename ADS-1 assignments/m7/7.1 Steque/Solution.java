@@ -107,7 +107,8 @@ class Steque {
     public void pop() {
         if (head != null && tail != null) {
             if (head.getNext() == null && tail.getNext() == null) {
-                head = tail = null;
+                head = null;
+                tail = head;
                 size--;
             } else if (head != null) {
                 head = head.getNext();
