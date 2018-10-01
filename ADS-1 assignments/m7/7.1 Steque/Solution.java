@@ -1,11 +1,90 @@
 import java.util.Scanner;
-import java.util.Arrays;
+class Node {
+		int item;
+		Node next;
+		Node(int item) {
+			item = item;
+			next = null;
+		}
+		Node(int item, Node node) {
+			item = item;
+			next = node;
+		}
+		public int getItem() {
+			return item;
+		}
+		public void setItem(int value) {
+			item = value;
+		}
+		public Node getNext() {
+			return next;
+		}
+		public void setNext(Node node) {
+			next = node;
+		}
+	}
+class Steque {
+	Node head;
+	Node tail;
+	int size;
+	
+	public Steque() {
+		head = null;
+		tail = null;
+		size = 0;
+	}
+	public void push(int element) {
+		Node oldhead = head;
+		head = new Node(element, oldhead);
+		if (oldhead == null) {
+			head = tail;
+		}
+		size++;
+	}
+	public void pop() {
+		if (head != null && tail != null) {
+			if (head.getNext() == null && tail.getNext() == null) {
+				head = tail = null;
+				size--;
+			} else {
+				head = head.getNext();
+				size--;
+			}
+		}
+		
+	}
+	public void enqueue(int element) {
+		if (head != null && tail != null) {
+			Node oldtail = tail;
+			tail = new Node(element, null);
+			oldtail.setNext(tail);
+		} else if (head == null && tail == null) {
+			head = tail = new Node(element, null);
+		}
+		
+	}
+	public String toString() {
+		StringBuffer sb = new StringBuffer("");
+		if (size == 0) {
+			sb.append("Steque is empty.");
+			return sb.toString();
+		} else {
+			Node temp = head;
+			while (temp != null) {
+			sb.append(temp + ", ");
+			head = head.getNext();
+			}
+		}
+		return sb.toString().substring(0, sb.length() - 2);
+	}
 
+}
 public class Solution {
 	public static void main(String[] args) {
-		Steque steque = new Steque();
 		Scanner sc = new Scanner(System.in);
-		String n = sc.nextLine();
+		int n = Integer.parseInt(sc.nextLine());
+		while (n > 0) {
+		Steque steque = new Steque();
 		while (sc.hasNext()) {
 		String[] line = sc.nextLine().split(" ");
 		switch(line[0]) {
@@ -14,11 +93,8 @@ public class Solution {
 			System.out.println(steque);
 			break;
 			case "pop":
-			try {
 			steque.pop();
-			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
-			}
+			System.out.println(steque);
 			break;
 			case "enqueue":
 			steque.enqueue(Integer.parseInt(line[1]));
@@ -28,82 +104,8 @@ public class Solution {
 			steque = new Steque();
 			break;
 		}
-			
+		n--;
 		}
 	}
 }
-class Steque {
-	Node head;
-	Node tail;
-	int size;
-	class Node {
-		int item;
-		Node next;
-		Node() {
-		}
-		Node(int item) {
-			this.item = item;
-			this.next = null;
-		}
-		// Node(int item, Node nod/e) {
-			// this.item = item;
-			// this.next = node;
-		// }
-	}
-	Steque() {
-		this.head = null;
-		this.tail = null;
-		this.size = 0;
-	}
-	public boolean isEmpty() {
-		return head == null && tail == null;
-	}
-	public int push(int element) {
-		Node newhead = new Node(element);
-		newhead.next = head;
-		head = newhead;
-		size++;
-		// System.out.println(head.item);
-		return head.item;
-	}
-	public int pop() throws Exception{
-		if (head != null) {
-		int data = head.item;
-		head = head.next;
-		size--;
-		return data;	
-		} else {
-			throw new Exception("Steque is empty.");
-		}
-	}
-	public void enqueue(int element) {
-		Node newhead = new Node(element);
-		if (isEmpty()) {
-			head = newhead;
-			tail = head;
-			tail.next = null;
-			size++;
-			return;
-		}
-		Node oldtail = tail;
-		tail = newhead;
-		oldtail.next = tail;
-		tail.next = null;
-		size++;
-	}
-	public String toString() {
-		String s = "";
-		if (head == null) {
-			return s;
-		}
-		s = s + head.item;
-		Node temp = head.next;
-		while (temp != null) {
-			s = s + " " + temp.item;
-			temp = temp.next;
-		}
-		return s;
-
-	}
-
 }
