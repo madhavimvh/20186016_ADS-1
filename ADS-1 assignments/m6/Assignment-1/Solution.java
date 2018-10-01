@@ -30,24 +30,44 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	LinkedList result = new LinkedList();
     	String a = "";
-    	String carry = "";
+    	int carry = 0;
     	int sum = 0;
     	String sum1 = "";
+    	int flag = 0;
     	Stack s1 = new Stack();
     	Stack s2 = new Stack();
+    	Stack s3 = new Stack();
+    	Stack s4 = new Stack();
     	while (!list1.isEmpty()) {
     		s1.push(Integer.parseInt(list1.pop()));
     	}
+    		// System.out.println(s1.pop());
+    	while (!s1.isEmpty()) {
+    		s3.push(s1.pop());
+    	}
+    		// System.out.println(s3.pop());
     	while (!list2.isEmpty()) {
     		s2.push(Integer.parseInt(list2.pop()));
     	}
-    	while(!s1.isEmpty() && !s2.isEmpty()) {
-    		a = String.valueOf(s1.pop() + s2.pop());
+    	while (!s2.isEmpty()) {
+    		s4.push(s2.pop());
+    	}
+    	while(!s3.isEmpty() && !s4.isEmpty()) {
+    		a = String.valueOf(s3.pop() + s4.pop());
+    		System.out.println(a);
     		if (a.charAt(0) == '1') {
-    			sum = Integer.parseInt(a) + 1;
+    			System.out.println("kjk");
+    			System.out.println(a.charAt(0));
+    			sum = Integer.parseInt(String.valueOf(a.charAt(1))) + carry;
+    			carry = 1;
     			sum1 += sum;
+    			System.out.println("frst");
+    			System.out.println(sum1);
     		} else {
+    			sum = Integer.parseInt(String.valueOf(a.charAt(1)));
     			sum1 += sum;
+    			System.out.println("thrd");
+    			System.out.println(sum1);
     		}
     	}
     	result.push(sum1);
