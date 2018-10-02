@@ -21,21 +21,21 @@ class Tournament implements Comparable {
     private int draws;
     /**
      * Constructs the object.
-     *
-     * @param      team    The team
-     * @param      wins    The wins
-     * @param      losses  The losses
-     * @param      draws   The draws
+     * Time complexity is 1.
+     * @param      teamm    The team
+     * @param      winss    The wins
+     * @param      lossess  The losses
+     * @param      drawss   The draws
      */
-    public Tournament(final String team, final int wins, final int losses, final int draws) {
-        this.team = team;
-        this.wins = wins;
-        this.losses = losses;
-        this.draws = draws;
+    public Tournament(final String teamm, final int winss, final int lossess, final int drawss) {
+        this.team = teamm;
+        this.wins = winss;
+        this.losses = lossess;
+        this.draws = drawss;
     }
     /**
      * Gets the team.
-     *
+     * Time complexity is 1.
      * @return     The team.
      */
     public String getTeam() {
@@ -43,7 +43,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the wins.
-     *
+     * Time complexity is 1.
      * @return     The wins.
      */
     public int getWins() {
@@ -51,7 +51,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the losses.
-     *
+     * Time complexity is 1.
      * @return     The losses.
      */
     public int getLosses() {
@@ -59,7 +59,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the draws.
-     *
+     * Time complexity is 1.
      * @return     The draws.
      */
     public int getDraws() {
@@ -67,7 +67,7 @@ class Tournament implements Comparable {
     }
     /**
      * method to return boolean
-     *
+     * Time complexity is 1.
      * @param      that  The that
      *
      * @return     returns boolean.
@@ -77,7 +77,7 @@ class Tournament implements Comparable {
     }
     /**
      * method to compare and return an int.
-     *
+     * Time complexity is 1.
      * @param      object  The object
      *
      * @return     returns an int.
@@ -108,6 +108,10 @@ class Tournament implements Comparable {
  */
 class Insertion {
     /**
+     * 100 is a magic number.
+     */
+    private static final int HUN = 100;
+    /**
      * tournaments is of type Tournament.
      */
     private Tournament[] tournaments;
@@ -116,15 +120,16 @@ class Insertion {
      */
     private int size;
     /**
+     * Time complexity is 1.
      * Constructs the object.
      */
     public Insertion() {
-        tournaments = new Tournament[100];
+        tournaments = new Tournament[HUN];
         size = 0;
     }
     /**
      * Adds a tournament.
-     *
+     * Time complexity is 1.
      * @param      t     t is of type Tournament.
      */
     public void addTournament(final Tournament t) {
@@ -132,7 +137,7 @@ class Insertion {
     }
     /**
      * Gets the tournament.
-     *
+     * Time complexity is 1.
      * @param      index  The index
      *
      * @return     The tournament.
@@ -141,13 +146,14 @@ class Insertion {
         return tournaments[index];
     }
     /**
+     * Time complexity is N.
      * method to sort team ranking.
      */
     public void sort() {
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
             if (tournaments[j].less(tournaments[j - 1])) {
-                exch(tournaments, j, j-1);
+                exch(tournaments, j, j - 1);
             } else {
                 break;
             }
@@ -156,7 +162,7 @@ class Insertion {
     }
     /**
      * method to swap.
-     *
+     * Time complexity is N.
      * @param      a     a is of type Tournament.
      * @param      i     i is of type int.
      * @param      j     j is of type int.
@@ -168,7 +174,7 @@ class Insertion {
     }
     /**
      * Returns a string representation of the object.
-     *
+     * Time complexity is 1.
      * @return     String representation of the object.
      */
     public String toString() {
@@ -202,7 +208,7 @@ public class Solution {
             String[] s = sc.nextLine().split(",");
             sortlist.addTournament(new Tournament(s[0],
                 Integer.parseInt(s[1]), Integer.parseInt(s[2]),
-                Integer.parseInt(s[3])));
+                Integer.parseInt(s[2 + 1])));
     }
     sortlist.sort();
     System.out.println(sortlist);
