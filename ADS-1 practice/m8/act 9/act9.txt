@@ -1,0 +1,4 @@
+The method which is faster when the elements in an array are in reverse
+order is selection sort because it finds out the least element in an 
+array and swaps. In this method. iterations are less and hence is a 
+faster method.
