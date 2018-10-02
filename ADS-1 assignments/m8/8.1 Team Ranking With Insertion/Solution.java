@@ -34,9 +34,10 @@ class Tournament {
 		} else if (this.getWins() < that.getWins()) {
 			return -1;
 		}
-		if (this.getLosses() > this.getLosses()) {
+		if (this.getLosses() > that.getLosses()) {
 			return -1;
 		} else if (this.getLosses() < that.getLosses()) {
+			// System.out.println("lsj");
 			return +1;
 		}
 		if (this.getDraws() > that.getDraws()) {
