@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for tournament.
  */
@@ -29,7 +28,8 @@ class Tournament implements Comparable {
      * @param      lossess  The losses
      * @param      drawss   The draws
      */
-    Tournament(final String teamm, final int winss, final int lossess, final int drawss) {
+    Tournament(final String teamm, final int winss,
+        final int lossess, final int drawss) {
         this.team = teamm;
         this.wins = winss;
         this.losses = lossess;
@@ -124,7 +124,7 @@ class Selection {
     /**
      * Constructs the object.
      */
-    public Selection() {
+    Selection() {
         tournaments = new Tournament[HUN];
         size = 0;
     }
