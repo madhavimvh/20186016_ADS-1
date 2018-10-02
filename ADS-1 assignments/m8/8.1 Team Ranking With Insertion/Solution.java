@@ -77,13 +77,7 @@ class Insertion {
 		tournaments[j] = temp;
 	}
 	public String toString() {
-		String s = "";
-		int i = 0;
-		for (i = 0; i < size - 1; i++) {
-		s += tournaments[i].getTeam() + ",";	
-		}
-		s += tournaments[i].getTeam();
-		return s;
+		return Arrays.toString(tournaments).replace("[", "").replace("]", "").replace(", ", "");
 	}
 }
 /**
