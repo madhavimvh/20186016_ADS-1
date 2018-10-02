@@ -1,0 +1,3 @@
+The method which runs faster when all the elements in an array are 
+identical is insertion sort because there is a break statement in 
+insertion sort due to iterations are decreased.
