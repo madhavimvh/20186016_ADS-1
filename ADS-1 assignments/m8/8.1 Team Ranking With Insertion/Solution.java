@@ -86,6 +86,9 @@ class Insertion {
 		return s;
 	}
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -99,3 +102,5 @@ public class Solution {
 	System.out.println(sortlist);
 	}
 }
+
+
