@@ -24,16 +24,16 @@ class Tournament implements Comparable {
     /**
      * Constructs the object.
      *
-     * @param      team    The team
-     * @param      wins    The wins
-     * @param      losses  The losses
-     * @param      draws   The draws
+     * @param      teamm    The team
+     * @param      winss    The wins
+     * @param      lossess  The losses
+     * @param      drawss   The draws
      */
-    public Tournament(final String team, final int wins, final int losses, final int draws) {
-        this.team = team;
-        this.wins = wins;
-        this.losses = losses;
-        this.draws = draws;
+    Tournament(final String teamm, final int winss, final int lossess, final int drawss) {
+        this.team = teamm;
+        this.wins = winss;
+        this.losses = lossess;
+        this.draws = drawss;
     }
     /**
      * Gets the team.
@@ -110,6 +110,10 @@ class Tournament implements Comparable {
  */
 class Selection {
     /**
+     * 100 is a magic number.
+     */
+    private static final int HUN = 100;
+    /**
      * tournaments is of Tournament array.
      */
     private Tournament[] tournaments;
@@ -121,7 +125,7 @@ class Selection {
      * Constructs the object.
      */
     public Selection() {
-        tournaments = new Tournament[100];
+        tournaments = new Tournament[HUN];
         size = 0;
     }
     /**
@@ -142,13 +146,16 @@ class Selection {
     public Tournament getTournament(final int index) {
         return tournaments[index];
     }
+    /**
+     * sort method is used to sort.
+     */
     public void sort() {
         for (int i = 0; i < size; i++) {
             int min = i;
             for (int j = i + 1; j < size; j++) {
                 if (tournaments[j].less(tournaments[min])) {
                     min = j;
-                }   
+                }
             }
             exch(tournaments, i, min);
         }
@@ -174,7 +181,7 @@ class Selection {
         String s = "";
         int i = 0;
         for (i = 0; i < size - 1; i++) {
-        s += tournaments[i].getTeam() + ",";    
+        s += tournaments[i].getTeam() + ",";
         }
         s += tournaments[i].getTeam();
         return s;
@@ -183,7 +190,7 @@ class Selection {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -201,7 +208,7 @@ public class Solution {
             String[] s = sc.nextLine().split(",");
             sortlist.addTournament(new Tournament(s[0],
                 Integer.parseInt(s[1]), Integer.parseInt(s[2]),
-                Integer.parseInt(s[3])));
+                Integer.parseInt(s[2 + 1])));
 
     }
     sortlist.sort();
