@@ -39,8 +39,8 @@ class Steque {
             tail = head;
         }
         size++;
-        System.out.println(element);
-        System.out.println(head.getItem());
+        // System.out.println(element);
+        // System.out.println(head.getItem());
     }
     public void pop() {
         if (head != null && tail != null) {
