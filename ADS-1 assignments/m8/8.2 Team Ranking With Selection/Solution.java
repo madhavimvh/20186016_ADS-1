@@ -23,11 +23,13 @@ class Tournament implements Comparable {
     /**
      * Constructs the object.
      *
+     * Time complexity is 1.
      * @param      teamm    The team
      * @param      winss    The wins
      * @param      lossess  The losses
      * @param      drawss   The draws
      */
+
     Tournament(final String teamm, final int winss,
         final int lossess, final int drawss) {
         this.team = teamm;
@@ -37,7 +39,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the team.
-     *
+     * Time complexity is 1.
      * @return     The team.
      */
     public String getTeam() {
@@ -45,7 +47,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the wins.
-     *
+     * Time complexity is 1.
      * @return     The wins.
      */
     public int getWins() {
@@ -53,7 +55,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the losses.
-     *
+     * Time complexity is 1.
      * @return     The losses.
      */
     public int getLosses() {
@@ -61,7 +63,7 @@ class Tournament implements Comparable {
     }
     /**
      * Gets the draws.
-     *
+     * Time complexity is 1.
      * @return     The draws.
      */
     public int getDraws() {
@@ -69,7 +71,7 @@ class Tournament implements Comparable {
     }
     /**
       * method to return boolean.
-      *
+      * Time complexity is 1.
       * @param      that  The that
       *
       * @return     return boolean.
@@ -79,7 +81,7 @@ class Tournament implements Comparable {
     }
     /**
      * compareTo is used to compare.
-     *
+     * Time complexity is 1.
      * @param      object  The object
      *
      * @return     returns an int value.
@@ -122,6 +124,7 @@ class Selection {
      */
     private int size;
     /**
+     * Time complexity is 1.
      * Constructs the object.
      */
     Selection() {
@@ -130,7 +133,7 @@ class Selection {
     }
     /**
      * Adds a tournament.
-     *
+     * Time complexity is 1.
      * @param      t     t is of type Tournament.
      */
     public void addTournament(final Tournament t) {
@@ -138,7 +141,7 @@ class Selection {
     }
     /**
      * Gets the tournament.
-     *
+     * Time complexity is 1.
      * @param      index  The index
      *
      * @return     The tournament.
@@ -147,6 +150,7 @@ class Selection {
         return tournaments[index];
     }
     /**
+     * Time complexity is N^2.
      * sort method is used to sort.
      */
     public void sort() {
@@ -162,7 +166,7 @@ class Selection {
     }
     /**
      * exch is a method to swap.
-     *
+     * Time complexity is N.
      * @param      a     a is of type Tournament.
      * @param      i     i is of type int.
      * @param      j     j is of type int.
@@ -174,7 +178,7 @@ class Selection {
     }
     /**
      * Returns a string representation of the object.
-     *
+     * Time complexity is 1.
      * @return     String representation of the object.
      */
     public String toString() {
