@@ -23,6 +23,9 @@ class Tournament implements Comparable {
 	public int getDraws() {
 		return draws;
 	}
+	public boolean less(Tournament that) {
+		return this.compareTo(that) > 0;
+	}
 	public int compareTo(Object object) {
 		Tournament that = (Tournament) object;
 		if (this.getWins() > that.getWins()) {
@@ -60,7 +63,7 @@ class Insertion {
 	public void sort() {
 		for (int i = 0; i < size; i++) {
 			for (int j = i; j > 0; j--) {
-			if (tournaments[j].compareTo(tournaments[j - 1]) == +1) {
+			if (tournaments[j].less(tournaments[j - 1])) {
 				exch(tournaments, j, j-1);
 			} else {
 				break;
