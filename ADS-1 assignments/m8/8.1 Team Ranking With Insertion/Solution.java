@@ -27,7 +27,8 @@ class Tournament implements Comparable {
      * @param      lossess  The losses
      * @param      drawss   The draws
      */
-    public Tournament(final String teamm, final int winss, final int lossess, final int drawss) {
+    Tournament(final String teamm, final int winss,
+        final int lossess, final int drawss) {
         this.team = teamm;
         this.wins = winss;
         this.losses = lossess;
@@ -123,7 +124,7 @@ class Insertion {
      * Time complexity is 1.
      * Constructs the object.
      */
-    public Insertion() {
+    Insertion() {
         tournaments = new Tournament[HUN];
         size = 0;
     }
@@ -190,7 +191,7 @@ class Insertion {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
