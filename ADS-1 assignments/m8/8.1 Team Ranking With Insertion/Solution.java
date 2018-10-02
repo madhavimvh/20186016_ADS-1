@@ -78,9 +78,11 @@ class Insertion {
 	}
 	public String toString() {
 		String s = "";
-		for (int i = 0; i < size; i++) {
+		int i = 0;
+		for (i = 0; i < size - 1; i++) {
 		s += tournaments[i].getTeam() + ",";	
 		}
+		s += tournaments[i].getTeam();
 		return s;
 	}
 }
