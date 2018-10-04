@@ -75,7 +75,7 @@ class LinkedList {
 			Node oldhead = head;
 			head = new Node(n, oldhead);
 			// System.out.println("jlkjlk");
-			System.out.println(head.getItem());
+			// System.out.println(head.getItem());
 		} else { 
 			Node temp = head;
 			for (int i = 0; i < pos; i++) {
@@ -102,6 +102,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		LinkedList list = new LinkedList();
+		while (sc.hasNext()) {
 		String[] n = sc.nextLine().split(" ");
 		switch(n[0]) {
 			case "insertAt":
@@ -114,5 +115,6 @@ public class Solution {
 			break;
 			// case ""
 		}
+	}
 	}
 }

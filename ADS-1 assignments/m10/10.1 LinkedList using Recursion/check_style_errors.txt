@@ -18,9 +18,9 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:101:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:102:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:102:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:106: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:106:23: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:109: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:111:32: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:107: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:107:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:110: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m10\10.1 LinkedList using Recursion\Solution.java:112:32: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 23 errors.
