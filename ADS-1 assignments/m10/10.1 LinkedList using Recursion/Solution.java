@@ -74,27 +74,31 @@ class LinkedList {
 		} else if (pos == 0) {
 			Node oldhead = head;
 			head = new Node(n, oldhead);
-			// System.out.println("jlkjlk");
-			// System.out.println(head.getItem());
 		} else { 
 			Node temp = head;
-			for (int i = 0; i < pos; i++) {
+			for (int i = 0; i < pos - 1; i++) {
 				temp = temp.next;
-				Node insert = temp;
-				insert.setItem(n);
-				insert.setNext(temp);
 			}
+			Node insert = temp.next;
+			Node node = new Node(n, insert);
+			temp.next = node;
 		}
+		size++;
 	}
 	public String toString() {
         StringBuffer sb = new StringBuffer("");
             Node temp = head;
-            while (temp != null) {
-            sb.append(temp + ", ");
-            temp = temp.getNext();
-            // System.out.println(head.getItem());
-            }
-        return sb.toString().substring(0, sb.length() - 2);
+            if (temp == null) {
+            	sb.append(".esrever ot stnemele oN");
+            	return sb.toString();
+            } else {
+	            while (temp != null) {
+	            sb.append(temp + ", ");
+	            temp = temp.getNext();
+	            // System.out.println(head.getItem());
+	            }
+	        	return sb.toString().substring(0, sb.length() - 2);
+        	}
         }
     }
 
@@ -106,14 +110,16 @@ public class Solution {
 		String[] n = sc.nextLine().split(" ");
 		switch(n[0]) {
 			case "insertAt":
-			try {
-			list.insertAt(Integer.parseInt(n[1]), Integer.parseInt(n[2]));
-			System.out.println(list);
-			} catch(Exception ex) {
-				System.out.println(ex.getMessage());
-			}
+				try {
+				list.insertAt(Integer.parseInt(n[1]), Integer.parseInt(n[2]));
+				System.out.println(list);
+				} catch(Exception ex) {
+					System.out.println(ex.getMessage());
+				}
 			break;
-			// case ""
+			case "reverse":
+				System.out.println(new StringBuffer(list.toString()).reverse().toString());
+			break;
 		}
 	}
 	}
