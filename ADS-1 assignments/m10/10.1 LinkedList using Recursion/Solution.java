@@ -87,20 +87,21 @@ class LinkedList {
 	}
 
 
-	public String reverse() {
-    	StringBuffer sb = new StringBuffer("");
-        Node temp = head;
-        if (temp == null) {
-        	sb.append(".esrever ot stnemele oN");
-        	return sb.toString();
-        } else {
-            while (temp != null) {
-            sb.append(temp + " ,");
-            temp = temp.getNext();
-            // System.out.println(head.getItem());
-            }
-        	return sb.toString().substring(0, sb.length() - 2);
-    	}
+	public void reverse() {
+    	Node temp = head;
+        Node newHead = null;
+        while (temp != null) {
+        	if (newHead == null) {
+        		newHead = temp.next;
+        		newHead.next = temp;
+        	} else {
+        		Node old = newHead;
+        		newHead = temp.next;
+        		newHead.next = old;
+        	}
+        	temp = temp.next;
+        }
+
     }
 
     public String toString() {
@@ -136,7 +137,8 @@ public class Solution {
 				}
 			break;
 			case "reverse":
-				System.out.println(new StringBuffer(list.reverse()).reverse().toString());
+				list.reverse();
+				System.out.println(list);
 			break;
 		}
 	}
