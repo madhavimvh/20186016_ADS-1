@@ -136,7 +136,7 @@ public class Solution {
 				}
 			break;
 			case "reverse":
-				System.out.println(list.reverse());
+				System.out.println(new StringBuffer(list.reverse()).reverse().toString());
 			break;
 		}
 	}
