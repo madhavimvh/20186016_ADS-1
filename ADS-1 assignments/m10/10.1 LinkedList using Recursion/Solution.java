@@ -71,22 +71,21 @@ class LinkedList {
 	public void insertAt(int pos, int n) throws Exception {
 		if (pos < 0 || pos > size) {
 			throw new Exception("Can’t insert at this position");
-		} else {
-		if (pos == 0) {
-		Node oldhead = head;
-		head = new Node(n, oldhead);
-		System.out.println("jlkjlk");
-		System.out.println(head.getItem());
+		} else if (pos == 0) {
+			Node oldhead = head;
+			head = new Node(n, oldhead);
+			// System.out.println("jlkjlk");
+			System.out.println(head.getItem());
+		} else { 
+			Node temp = head;
+			for (int i = 0; i < pos; i++) {
+				temp = temp.next;
+				Node insert = temp;
+				insert.setItem(n);
+				insert.setNext(temp);
+			}
 		}
-		Node temp = head;
-		for (int i = 0; i <= pos; i++) {
-			temp = temp.next;
-			Node insert = temp;
-			insert.setItem(n);
-			insert.setNext(temp);
-		}
-		}
-}
+	}
 	public String toString() {
         StringBuffer sb = new StringBuffer("");
         if (size == 0) {
