@@ -29,10 +29,9 @@ Your Output:
 7, 5
 7, 9, 5
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-null
 No elements to reverse.
 ----------------------------------------

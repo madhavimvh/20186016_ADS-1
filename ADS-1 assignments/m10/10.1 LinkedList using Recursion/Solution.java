@@ -87,7 +87,7 @@ class LinkedList {
 	}
 
 
-	public Node reverse() {
+	public void reverse() {
     	Node temp = head;
         Node newHead = null;
         while (temp != null) {
@@ -101,7 +101,7 @@ class LinkedList {
         	}
         	temp = temp.next;
         }
-        return temp;
+        // return temp;
 
     }
 
@@ -138,7 +138,7 @@ public class Solution {
 				}
 			break;
 			case "reverse":
-				System.out.println(list.reverse());
+				list.reverse();
 				System.out.println(list);
 			break;
 		}
