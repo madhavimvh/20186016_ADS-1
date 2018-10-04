@@ -111,7 +111,7 @@ class LinkedList {
             	return sb.toString();
             } else {
 	            while (temp != null) {
-	            sb.append(temp + " ,");
+	            sb.append(temp + ", ");
 	            temp = temp.getNext();
 	            // System.out.println(head.getItem());
 	            }
