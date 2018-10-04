@@ -88,10 +88,6 @@ class LinkedList {
 	}
 	public String toString() {
         StringBuffer sb = new StringBuffer("");
-        if (size == 0) {
-            sb.append("Steque is empty.");
-            return sb.toString();
-        } else {
             Node temp = head;
             while (temp != null) {
             sb.append(temp + ", ");
@@ -101,7 +97,7 @@ class LinkedList {
         return sb.toString().substring(0, sb.length() - 2);
         }
     }
-}
+
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
