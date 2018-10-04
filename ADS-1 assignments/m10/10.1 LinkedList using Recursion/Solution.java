@@ -101,7 +101,7 @@ class LinkedList {
         	}
         	temp = temp.next;
         }
-        return head;
+        return temp;
 
     }
 
