@@ -75,6 +75,8 @@ class LinkedList {
 		if (pos == 0) {
 		Node oldhead = head;
 		head = new Node(n, oldhead);
+		System.out.println("jlkjlk");
+		System.out.println(head.getItem());
 		}
 		Node temp = head;
 		for (int i = 0; i <= pos; i++) {

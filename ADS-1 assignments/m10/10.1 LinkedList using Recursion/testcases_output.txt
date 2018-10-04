@@ -5,6 +5,8 @@ Expected Output:
 7, 6, 5
 5, 6, 7
 Your Output: 
+jlkjlk
+5
 null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -23,6 +25,8 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 32, 66, 17, 7
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
+jlkjlk
+5
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
