@@ -110,6 +110,7 @@ public class Solution {
 			case "insertAt":
 			try {
 			list.insertAt(Integer.parseInt(n[1]), Integer.parseInt(n[2]));
+			System.out.println(list);
 			} catch(Exception ex) {
 				System.out.println(ex.getMessage());
 			}
