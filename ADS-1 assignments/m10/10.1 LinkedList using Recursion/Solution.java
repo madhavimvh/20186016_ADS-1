@@ -139,7 +139,7 @@ public class Solution {
 			break;
 			case "reverse":
 				list.reverse();
-				System.out.println(list);
+				System.out.println(list.toString());
 			break;
 		}
 	}
