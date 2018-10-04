@@ -1,10 +1,15 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 
 class Merge {
 	private static final int CUTOFF = 7;
+	private int[] a;
 	public Merge() {
 	}
+	// public Merge(int[] aa) {
+		// this.a = aa;
+	// }
 	private void merge(int[] a, int[] aux, int lo, int mid, int hi) {
 		assert isSorted(a, lo, mid);
         assert isSorted(a, mid+1, hi);
@@ -39,12 +44,17 @@ class Merge {
 		if (hi <= lo + CUTOFF - 1) {
 			Insertion insertion = new Insertion(a);
 			insertion.sort(a);
+			System.out.println("Insertion sort method invoked...");
 			return;
 		}
 			int mid = lo + (hi - lo) / 2;
 			sort(aux, a, lo, mid);
 			sort(aux, a, mid + 1, hi);
 			if (!less(a[mid + 1], a[mid])) {
+				// for (int i = lo; i <= hi; i++) {
+				// 	aux[i] = a[i];
+				// }
+				System.out.println("Array is already sorted. So, skipped the call to merge...");
 				return;
 			}
 			merge(a, aux, lo, mid, hi);
@@ -56,11 +66,20 @@ class Merge {
 	public boolean less(int a, int b) {
 		return (a < b);
 	}
+	public String toString(int[] a) {
+		String s = "[";
+		int i = 0;
+		for (i = 0; i < a.length - 1; i++) {
+			s += a[i] + ", ";
+		}
+		s += a[i] + "]";
+		return s;
+	}
 }
 class Insertion {
-	private int[] arr;
+	private int[] a;
 	public Insertion(int[] arr1) {
-		this.arr = arr1;
+		this.a = arr1;
 	}
 	public void sort(int[] a) {
 		for (int i = 0; i < a.length; i++) {
@@ -81,18 +100,31 @@ class Insertion {
     public boolean less(int a, int b) {
 		return (a < b);
 	}
+	public String toString(int[] a) {
+		System.out.println("kk");
+		System.out.println(Arrays.toString(a));
+		String s = "[";
+		int i = 0;
+		for (i = 0; i < a.length - 1; i++) {
+			s += a[i] + ", ";
+		}
+		s += a[i] + "]";
+		return s;
+	}
 
 }
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		while (sc.hasNext()) {
+		Merge m = new Merge();
 		String[] arr = sc.nextLine().split(",");
 		int[] tokens = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
 			tokens[i] = Integer.parseInt(arr[i]);
 		}
-		Merge merge = new Merge();
-		merge.sort(tokens);
-
+		m.sort(tokens);
+		System.out.println(m.toString(tokens));
+	}
 	}
 }
