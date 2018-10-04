@@ -85,11 +85,29 @@ class LinkedList {
 		}
 		size++;
 	}
-	public String toString() {
+
+
+	public String reverse() {
+    	StringBuffer sb = new StringBuffer("");
+        Node temp = head;
+        if (temp == null) {
+        	sb.append(".esrever ot stnemele oN");
+        	return sb.toString();
+        } else {
+            while (temp != null) {
+            sb.append(temp + " ,");
+            temp = temp.getNext();
+            // System.out.println(head.getItem());
+            }
+        	return sb.toString().substring(0, sb.length() - 2);
+    	}
+    }
+
+    public String toString() {
         StringBuffer sb = new StringBuffer("");
             Node temp = head;
             if (temp == null) {
-            	sb.append(".esrever ot stnemele oN");
+            	sb.append("No elements to reverse.");
             	return sb.toString();
             } else {
 	            while (temp != null) {
@@ -118,7 +136,7 @@ public class Solution {
 				}
 			break;
 			case "reverse":
-				System.out.println(new StringBuffer(list.toString()).reverse().toString());
+				System.out.println(list.reverse());
 			break;
 		}
 	}
