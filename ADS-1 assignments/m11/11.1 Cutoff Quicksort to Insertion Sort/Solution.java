@@ -105,7 +105,7 @@ public class Solution {
 			String[] str = sc.nextLine().split(" ");
 			Quick quick = new Quick();
 			quick.sort(str);
-			System.out.println(quick);
+			System.out.println(quick.toString());
 		}
 
 
