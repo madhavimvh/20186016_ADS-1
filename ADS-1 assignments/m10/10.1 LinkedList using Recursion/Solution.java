@@ -1,147 +1,161 @@
 import java.util.Scanner;
-
-
-class Node {
+/**
+ * Class of linked list.
+ */
+class LinkedList {
+    /**
+     * {Variable head of node type}.
+     */
+    private Node head;
+    /**
+     * {Size of linked list}.
+     */
+    private int size;
+    /**
+     * Class for node.
+     */
+    private class Node {
         /**
-         * value is of type int.
+         * {Integer item}.
          */
-        int value;
+        private int item;
         /**
-         * next is of type Node.
+         * {Variable next of node type}.
          */
-        Node next;
+        private Node next;
         /**
          * Constructs the object.
-         *
-         * @param      v     { parameter_description }
-         * @param      node  The node
+         * Time complexity of this method is O(1).
+         * @param      i     {Integer}
+         * @param      n     {Node}
          */
-        Node(final int v, final Node node) {
-            this.value = v;
-            this.next = node;
-        }
-        /**
-         * Gets the item.
-         *
-         * @return     The item.
-         */
-        public int getItem() {
-            return this.value;
-        }
-        /**
-         * Sets the item.
-         *
-         * @param      valuee  The value
-         */
-        public void setItem(final int valuee) {
-            this.value = valuee;
-        }
-        /**
-         * Gets the next.
-         *
-         * @return     The next.
-         */
-        public Node getNext() {
-            return this.next;
-        }
-        /**
-         * Sets the next.
-         *
-         * @param      node  The node
-         */
-        public void setNext(final Node node) {
-            this.next = node;
-        }
-        /**
-         * Returns a string representation of the object.
-         *
-         * @return     String representation of the object.
-         */
-        public String toString() {
-            return value + "";
+        Node(final int i, final Node n) {
+            this.item = i;
+            this.next = n;
         }
     }
-class LinkedList {
-	private Node head;
-	private int size;
-	public LinkedList() {
-		head = null;
-		size = 0;
-	}
-	public void insertAt(int pos, int n) throws Exception {
-		if (pos < 0 || pos > size) {
-			throw new Exception("Can’t insert at this position");
-		} else if (pos == 0) {
-			Node oldhead = head;
-			head = new Node(n, oldhead);
-		} else { 
-			Node temp = head;
-			for (int i = 0; i < pos - 1; i++) {
-				temp = temp.next;
-			}
-			Node insert = temp.next;
-			Node node = new Node(n, insert);
-			temp.next = node;
-		}
-		size++;
-	}
-
-
-	public void reverse() {
-    	Node temp = head;
-        Node newHead = null;
-        while (temp != null) {
-        	if (newHead == null) {
-        		newHead = temp.next;
-        		newHead.next = temp;
-        	} else {
-        		Node old = newHead;
-        		newHead = temp.next;
-        		newHead.next = old;
-        	}
-        	temp = temp.next;
-        }
-        // return temp;
-
+    /**
+     * Constructs the object.
+     * Time complexity of this method is O(1).
+     */
+    LinkedList() {
+        this.size = 0;
     }
-
-    public String toString() {
-        StringBuffer sb = new StringBuffer("");
-            Node temp = head;
-            if (temp == null) {
-            	sb.append("No elements to reverse.");
-            	return sb.toString();
-            } else {
-	            while (temp != null) {
-	            sb.append(temp + ", ");
-	            temp = temp.getNext();
-	            // System.out.println(head.getItem());
-	            }
-	        	return sb.toString().substring(0, sb.length() - 2);
-        	}
+    /**
+     * Method to get the size.
+     * Time complexity of this method is O(1).
+     * @return     The size.
+     */
+    public int getSize() {
+        return this.size;
+    }
+    /**
+     * {Method to insert an element}.
+     * Time complexity of this method is O(N).
+     * @param      node1     The node1
+     * @param      count    The count
+     * @param      element  The element
+     *
+     * @return     {Node}
+     */
+    public Node insert(final Node node1, final int count, final int element) {
+        if (count == 0) {
+            return new Node(element, node1);
+        }
+        node1.next = insert(node1.next, count - 1, element);
+        size++;
+        return node1;
+    }
+    /**
+     * {Method to insert at a particular position}.
+     * Time complexity of this method is O(1).
+     * @param      pos    The position
+     * @param      item1  The item 1
+     */
+    public void insertAt(final int pos, final int item1) {
+        head = insert(head, pos, item1);
+    }
+    /**
+     * {Method for reverse}.
+     * Time complexity of this method is O(N).
+     * @param      node  The node
+     *
+     * @return     {Node}
+     */
+    public Node reverse(final Node node) {
+        if  (node == null || node.next == null) {
+            return node;
+        }
+        Node nextold = reverse(node.next);
+        node.next.next = node;
+        node.next = null;
+        return nextold;
+    }
+    /**
+     * {Method to reverse a given linked list}.
+     * Time complexity of this method is O(1).
+     */
+    public void reverse() {
+        head = reverse(head);
+    }
+    /**
+     * {Method to display the elements}.
+     * Time complexity of this method is O(N).
+     * @return     {String}
+     */
+    public String display() {
+        Node old = head;
+        String str = "";
+        while (old != null) {
+            str += old.item + ", ";
+            old = old.next;
+        }
+        return str.substring(0, str.length() - 2);
+    }
+}
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Unused Constructor.
+    }
+    /**
+     * {Client Program}.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        LinkedList ll = new LinkedList();
+        while (scan.hasNext()) {
+            String[] tokens = scan.nextLine().split(" ");
+            switch (tokens[0]) {
+            case "insertAt":
+                if (Integer.parseInt(tokens[1]) < 0) {
+                    System.out.println("Can't insert at this position.");
+                } else if (Integer.parseInt(tokens[1]) > ll.getSize() + 1) {
+                    System.out.println("Can't insert at this position.");
+                } else {
+                    ll.insertAt(Integer.parseInt(tokens[1]),
+                        Integer.parseInt(tokens[2]));
+                    System.out.println(ll.display());
+                }
+                break;
+            case "reverse":
+                if (ll.getSize() == 0) {
+                    System.out.println("No elements to reverse.");
+                    return;
+                }
+                ll.reverse();
+                System.out.println(ll.display());
+                break;
+            default:
+                break;
+            }
         }
     }
-
-public class Solution {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		LinkedList list = new LinkedList();
-		while (sc.hasNext()) {
-		String[] n = sc.nextLine().split(" ");
-		switch(n[0]) {
-			case "insertAt":
-				try {
-				list.insertAt(Integer.parseInt(n[1]), Integer.parseInt(n[2]));
-				System.out.println(list);
-				} catch(Exception ex) {
-					System.out.println(ex.getMessage());
-				}
-			break;
-			case "reverse":
-				list.reverse();
-				System.out.println(list.toString());
-			break;
-		}
-	}
-	}
 }
