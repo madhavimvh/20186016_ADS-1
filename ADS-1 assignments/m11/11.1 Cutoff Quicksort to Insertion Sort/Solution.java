@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 class Quick {
 	private static final int CUTOFF = 7;
+	private Comparable[] a;
+	public Quick(Comparable[] a1) {
+		this.a = a1;
+	}
 	private int partition(Comparable[] a, int lo, int hi) {
 		int i = lo;
 		int j = hi + 1;
@@ -103,7 +107,7 @@ public class Solution {
 		for (int i = 0; i < n; i++) {
 			int a = Integer.parseInt(sc.nextLine());
 			String[] str = sc.nextLine().split(" ");
-			Quick quick = new Quick();
+			Quick quick = new Quick(str);
 			quick.sort(str);
 			System.out.println(quick.toString());
 		}
