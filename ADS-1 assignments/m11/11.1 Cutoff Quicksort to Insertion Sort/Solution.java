@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Quick {
 	private static final int CUTOFF = 7;
-	private int partition(int[] a, int lo, int hi) {
+	private int partition(Comparable[] a, int lo, int hi) {
 		int i = lo;
 		int j = hi + 1;
 		while(true) {
@@ -25,15 +25,15 @@ class Quick {
 		exch(a, lo, j);
 		return j;
 	}
-	public void exch(final int[] a, final int i, final int j) {
-        int temp = a[i];
+	public void exch(final Comparable[] a, final int i, final int j) {
+        Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-    public boolean less(int a, int b) {
-    	return (a < b);
+    public boolean less(Comparable a, Comparable b) {
+    	return (a.compareTo(b)) < 0;
     }
-	public void sort(int[] a) {
+	public void sort(Comparable[] a) {
 		if (a.length < CUTOFF) {
 			System.out.println("insertionSort called");
 			Insertion insertion = new Insertion();
@@ -42,7 +42,7 @@ class Quick {
 			sort(a, 0, a.length - 1);
 		}
 	}
-	public void sort(int[] a, int lo, int hi) {
+	public void sort(Comparable[] a, int lo, int hi) {
 		if (hi <= lo) {
 			return;
 		}
@@ -50,7 +50,7 @@ class Quick {
 		sort(a, lo, j - 1);
 		sort(a, j + 1, hi);
 	}
-	public String toString(int[] a) {
+	public String toString(Comparable[] a) {
 		// System.out.println("kk");
 		// System.out.println(Arrays.toString(a));
 		String s = "[";
@@ -65,7 +65,7 @@ class Quick {
 class Insertion {
 	public Insertion() {
 	}
-	public void sort(int[] a) {
+	public void sort(Comparable[] a) {
 		for (int i = 0; i < a.length; i++) {
 			for (int j = i; j > 0; j--) {
 				if (less(a[j], a[j - 1])) {
@@ -76,15 +76,15 @@ class Insertion {
 			}
 		}
 	}
-	public void exch(final int[] a, final int i, final int j) {
-        int temp = a[i];
+	public void exch(final Comparable[] a, final int i, final int j) {
+        Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-    public boolean less(int a, int b) {
-		return (a < b);
+    public boolean less(Comparable a, Comparable b) {
+		return (a.compareTo(b)) < 0;
 	}
-	public String toString(int[] a) {
+	public String toString(Comparable[] a) {
 		// System.out.println("kk");
 		// System.out.println(Arrays.toString(a));
 		String s = "[";
@@ -102,11 +102,7 @@ public class Solution {
 		int n = Integer.parseInt(sc.nextLine());
 		for (int i = 0; i < n; i++) {
 			int a = Integer.parseInt(sc.nextLine());
-			String[] st = sc.nextLine().split(" ");
-			int[] str = new int[st.length];
-			for (int j = 0; j < str.length; j++) {
-				str[j] = Integer.parseInt(st[j]);
-			}
+			String[] str = sc.nextLine().split(" ");
 			Quick quick = new Quick();
 			quick.sort(str);
 		}
