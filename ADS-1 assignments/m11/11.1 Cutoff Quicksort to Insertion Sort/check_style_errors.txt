@@ -28,8 +28,6 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:49:42: Parameter lo should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:49:50: Parameter hi should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:57:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:57:32: Parameter a should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:57:45: 'a' hides a field. [HiddenField]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:69: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:70:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:70:9: Redundant 'public' modifier. [RedundantModifier]
@@ -46,4 +44,4 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:104:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1\ADS-1 assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:104:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 46 errors.
+Checkstyle ends with 44 errors.

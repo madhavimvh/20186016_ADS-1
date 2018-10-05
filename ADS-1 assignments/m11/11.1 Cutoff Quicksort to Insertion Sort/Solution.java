@@ -54,7 +54,7 @@ class Quick {
 		sort(a, lo, j - 1);
 		sort(a, j + 1, hi);
 	}
-	public String toString(Comparable[] a) {
+	public String toString() {
 		// System.out.println("kk");
 		// System.out.println(Arrays.toString(a));
 		String s = "[";
