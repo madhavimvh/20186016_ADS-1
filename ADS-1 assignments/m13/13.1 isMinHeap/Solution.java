@@ -8,14 +8,14 @@ class Minheap<E extends Comparable<E>> {
 	}
 	public boolean checkMinheap() {
 		for (int i = 0; i < str.length - 1; i++) {
-			if (!less(str[i], str[i + 1])) {
+			if (less(str[i + 1], str[i])) {
 				return false;
 			}
 		}
 		return true;
 	}
 	public boolean less(E i, E j) {
-		return i.compareTo(j) < 0;
+		return i.compareTo(j) <= 0;
 	}
 }
 public class Solution {
