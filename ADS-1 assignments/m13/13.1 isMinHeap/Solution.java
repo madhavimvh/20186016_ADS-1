@@ -8,7 +8,7 @@ class Minheap<E extends Comparable<E>> {
 	}
 	public boolean checkMinheap() {
 		for (int i = 0; i < str.length - 1; i++) {
-			if (less(str[i + 1], str[i])) {
+			if (!less(str[i], str[i + 1])) {
 				return false;
 			}
 		}
@@ -58,14 +58,19 @@ public class Solution {
 			break;
 			case "Float":
 			while (n > 0) {
-				String[] s = scan.nextLine().split(",");
-				Float[] sr = new Float[s.length];
-				for (int i = 0; i < s.length; i++) {
-					sr[i] = Float.parseFloat(s[i]);
+				String s = scan.nextLine();
+				if (s.equals("")) {
+					System.out.println("false");
+				} else {
+				String[] ss = s.split(",");
+				Float[] sr = new Float[ss.length];
+				for (int i = 0; i < ss.length; i++) {
+					sr[i] = Float.parseFloat(ss[i]);
 				}
 				Minheap<Float> heap = new Minheap<Float>(sr);
 				System.out.println(heap.checkMinheap());
 				n--;
+			}
 			}
 			break;
 			default:
