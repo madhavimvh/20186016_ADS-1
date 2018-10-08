@@ -43,6 +43,9 @@ class Minheap<E extends Comparable<E>> {
         return i.compareTo(j) <= 0;
     }
 }
+/**
+ * class for Solution.
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -58,7 +61,7 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
         int n = Integer.parseInt(scan.nextLine());
-        switch(str) {
+        switch (str) {
             case "String":
             while (n > 0) {
                 String[] st = scan.nextLine().split(",");
