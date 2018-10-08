@@ -24,8 +24,9 @@ class Minheap<E extends Comparable<E>> {
      * @return     returns boolean.
      */
     public boolean checkMinheap() {
-        for (int i = 0; i < str.length - 1; i++) {
-            if (!less(str[i], str[i + 1])) {
+        int x = str.length;
+        for (int i = 0; i < x/2; i++) {
+            if (!less(str[i], str[(2*i) + 1]) && !less(str[i], str[(2*i) + 2])) {
                 return false;
             }
         }
