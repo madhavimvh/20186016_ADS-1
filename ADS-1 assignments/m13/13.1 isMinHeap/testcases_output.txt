@@ -9,11 +9,8 @@ false
 false
 false
 false
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:29)
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 false
 false
@@ -28,11 +25,8 @@ false
 false
 false
 false
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:29)
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -51,9 +45,6 @@ false
 false
 true
 false
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -64,9 +55,6 @@ Your Output:
 false
 false
 false
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:47)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -80,5 +68,5 @@ Exception in thread "main" java.lang.NumberFormatException: empty String
 	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
 	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
 	at java.base/java.lang.Float.parseFloat(Float.java:455)
-	at Solution.main(Solution.java:61)
+	at Solution.main(Solution.java:64)
 ----------------------------------------

@@ -29,6 +29,7 @@ public class Solution {
 				String[] st = scan.nextLine().split(",");
 				Minheap<String> heap = new Minheap<String>(st);
 				System.out.println(heap.checkMinheap());
+				n--;
 			}
 			break;
 			case "Integer":
@@ -40,6 +41,7 @@ public class Solution {
 				}
 				Minheap<Integer> heap = new Minheap<Integer>(sr);
 				System.out.println(heap.checkMinheap());
+				n--;
 			}
 			break;
 			case "Double":
@@ -51,6 +53,7 @@ public class Solution {
 				}
 				Minheap<Double> heap = new Minheap<Double>(sr);
 				System.out.println(heap.checkMinheap());
+				n--;
 			}
 			break;
 			case "Float":
@@ -62,6 +65,7 @@ public class Solution {
 				}
 				Minheap<Float> heap = new Minheap<Float>(sr);
 				System.out.println(heap.checkMinheap());
+				n--;
 			}
 			break;
 			default:
