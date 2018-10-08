@@ -59,10 +59,10 @@ public class Solution {
 			case "Float":
 			while (n > 0) {
 				String s = scan.nextLine();
-				if (s.equals("")) {
-					System.out.println("false");
-					break;
-				} else {
+				// if (s.equals("")) {
+					// System.out.println("false");
+					// break;
+				// } else {
 				String[] ss = s.split(",");
 				Float[] sr = new Float[ss.length];
 				for (int i = 0; i < ss.length; i++) {
@@ -71,7 +71,7 @@ public class Solution {
 				Minheap<Float> heap = new Minheap<Float>(sr);
 				System.out.println(heap.checkMinheap());
 				n--;
-			}
+			// }
 			}
 			break;
 			default:
