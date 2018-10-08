@@ -21,8 +21,8 @@ class Minheap<E extends Comparable<E>> {
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = Integer.parseInt(scan.nextLine());
 		String str = scan.nextLine();
+		int n = Integer.parseInt(scan.nextLine());
 		switch(str) {
 			case "String":
 			while (n > 0) {
