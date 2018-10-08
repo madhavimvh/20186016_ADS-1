@@ -10,7 +10,12 @@ class Minheap<E extends Comparable<E>> {
      * str is of type E.
      */
     private E[] str;
-    public Minheap(E[] strr) {
+    /**
+     * Constructs the object.
+     *
+     * @param      strr  The strr
+     */
+    Minheap(final E[] strr) {
         this.str = strr;
     }
     /**
