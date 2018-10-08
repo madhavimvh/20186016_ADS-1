@@ -61,6 +61,7 @@ public class Solution {
 				String s = scan.nextLine();
 				if (s.equals("")) {
 					System.out.println("false");
+					break;
 				} else {
 				String[] ss = s.split(",");
 				Float[] sr = new Float[ss.length];
