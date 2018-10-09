@@ -35,13 +35,13 @@ class MaxPQ {
 		swim(n);
 		System.out.println(median(n));
 	}
-	public int median(int k) {
+	public Double median(int k) {
 		if (n == 1) {
-			return maxpq[1];
+			return Double.parseDouble(String.valueOf(maxpq[1]));
 		} else {
-		int min = maxpq[k];
-		int max = maxpq[1];
-		int med = (min + max) / 2;
+		Double min = Double.parseDouble(String.valueOf(maxpq[k]));
+		Double max = Double.parseDouble(String.valueOf(maxpq[1]));
+		Double med = (min + max) / 2.0;
 		return med;
 	}
 	}
