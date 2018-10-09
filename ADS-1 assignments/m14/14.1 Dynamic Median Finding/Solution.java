@@ -38,6 +38,7 @@ class MaxPQ {
 	}
 	public Double median(int k) {
 		System.out.println("ljlj");
+		System.out.println(k);
 		if (k == 1) {
 			return Double.parseDouble(String.valueOf(maxpq[1]));
 		} else {
