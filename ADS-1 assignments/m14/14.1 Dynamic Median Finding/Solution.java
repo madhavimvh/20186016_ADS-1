@@ -40,7 +40,10 @@ class MaxPQ {
 			return Double.parseDouble(String.valueOf(maxpq[1]));
 		} else {
 		Double min = Double.parseDouble(String.valueOf(maxpq[k]));
+		System.out.println("lkj");
+		System.out.println(min);
 		Double max = Double.parseDouble(String.valueOf(maxpq[1]));
+		System.out.println(max);
 		Double med = (min + max) / 2.0;
 		return med;
 	}
