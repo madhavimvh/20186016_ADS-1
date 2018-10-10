@@ -563,14 +563,13 @@ public class Solution {
 				st.put(arr[i], st.get(arr[i] + 1));
 			}
 		}
-		String[] input = scan.nextLine().split(" ");
 		while (scan.hasNext()) {
+		String[] input = scan.nextLine().split(" ");
 		switch(input[0]) {
 			case "max":
 			System.out.println(st.max());
 			break;
 			case "floor":
-			System.out.println("lk");
 			System.out.println(st.floor(input[1]));
 			break;
 			case "rank":
