@@ -4,59 +4,37 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
-		Median med = new Median(n);
-		while (n > 0) {
-			double num = Double.parseDouble(scan.nextLine());
-			med.add(num);
-		}
-		System.out.println("khkjh");
-		System.out.println(med.getMedian());
-	}
-}
-class Median {
-	private MinPQ min;
-	private MaxPQ max;
-	private int size;
-	public Median(int cap) {
-		if (cap % 2 == 0) {
-			min = new MinPQ(cap/2);
-			max = new MaxPQ(cap/2);
-		} else {
-			min = new MinPQ((cap + 1) / 2);
-			max = new MaxPQ((cap + 1) / 2);
-		}
-		size = 0;
-	}
-	public void add(double val) {
-		if (max.isEmpty()) {
-			max.insert(val);
-		} else if (max.size() == min.size()) {
-			if (val < min.getMinimum()) {
-				max.insert(val);
+		MinPQ minarr = new MinPQ(n);
+		MaxPQ maxarr = new MaxPQ(n);
+		double median = 0;
+		for (int i = 0; i < n; i++) {
+			Float val = scan.nextFloat();
+			if (val > median) {
+				minarr.insert(val);
 			} else {
-				min.insert(val);
-				max.insert(min.delMin());
+				maxarr.insert(val);
 			}
-		} else if (max.size() > min.size()) {
-			if (val > max.getMaximum()) {
-				min.insert(val);
-			} else {
-				max.insert(val);
-				min.insert(max.delMax());
+			if (minarr.size() - maxarr.size() > 1) {
+				maxarr.insert(minarr.delMin());
+			}
+			if (maxarr.size() - minarr.size() > 1) {
+				minarr.insert(maxarr.delMax());
+			}
+			if (minarr.size() == maxarr.size()) {
+				median = (minarr.getMinimum() + maxarr.getMaximum()) / 2;
+				System.out.println(median);
+			}
+			if (maxarr.size() > minarr.size()) {
+				median = maxarr.getMaximum();
+				System.out.println(median);
+			}
+			if (minarr.size() > maxarr.size()) {
+				median = minarr.getMinimum();
+				System.out.println(median);
 			}
 		}
 	}
-	public double getMedian() {
-		if (max.isEmpty()) {
-			return 0;
-		} else if(max.size() == min.size()) {
-			return (max.getMaximum() + min.getMinimum()) / 2.0;
-		} else {
-			return  max.getMaximum();
-		}
-	}
 }
-
 class MinPQ {
 	private double[] minpq;
 	private int m;
