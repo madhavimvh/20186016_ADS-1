@@ -265,6 +265,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
+    	System.out.println(key);
+    	System.out.println(val);
         if (key == null) {
         	throw new IllegalArgumentException("first argument to put() is null");
         	}
@@ -405,7 +407,6 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Key floor(Key key) {
-    	System.out.println("lkk");
         if (key == null) {
         	throw new IllegalArgumentException("argument to floor() is null");
         }

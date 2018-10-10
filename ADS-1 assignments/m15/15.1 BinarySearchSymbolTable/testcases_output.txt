@@ -15,8 +15,33 @@ S 0
 X 7
 null
 Your Output: 
+S
+0
+E
+1
+A
+2
+R
+3
+C
+4
+H
+5
+E
+null
 X
-lkk
+7
+A
+null
+M
+9
+P
+10
+L
+11
+E
+12
+X
 R
 0
 false
@@ -49,21 +74,40 @@ O
 false
 null
 Your Output: 
+E
+0
+A
+1
+S
+2
+Y
+3
+Q
+4
+U
+5
+E
+null
+S
+null
+T
+8
+I
+9
+O
+10
+N
+11
 Y
 Q 4
 T 8
 U 5
 Y 3
 
-lkk
 Y
-lkk
 null
-lkk
 Y
-lkk
 null
-lkk
 null
 0
 false
@@ -92,6 +136,28 @@ true
 5
 T
 Your Output: 
+S
+0
+O
+1
+R
+2
+T
+3
+E
+4
+X
+5
+A
+6
+M
+7
+P
+8
+L
+9
+E
+null
 X
 L 9
 M 7
@@ -111,7 +177,6 @@ X 5
 8
 true
 5
-lkk
 T
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -135,6 +200,44 @@ true
 13
 P
 Your Output: 
+B
+0
+I
+1
+N
+2
+A
+3
+R
+4
+Y
+5
+S
+6
+E
+7
+A
+null
+R
+null
+C
+10
+H
+11
+E
+null
+X
+13
+A
+14
+M
+15
+P
+16
+L
+17
+E
+18
 B 0
 C 10
 E 18
@@ -152,7 +255,6 @@ Y
 11
 true
 13
-lkk
 P
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -171,7 +273,28 @@ S 0
 T 6
 Y 1
 Your Output: 
-lkk
+S
+0
+Y
+1
+M
+2
+B
+3
+O
+4
+L
+5
+T
+6
+A
+7
+B
+null
+L
+null
+E
+10
 M
 null
 Y
