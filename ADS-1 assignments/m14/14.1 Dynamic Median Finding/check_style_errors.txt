@@ -1,5 +1,1 @@
-Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m14\14.1 Dynamic Median Finding\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-Audit done.
-Checkstyle ends with 2 errors.
+Files to process must be specified, found 0.
