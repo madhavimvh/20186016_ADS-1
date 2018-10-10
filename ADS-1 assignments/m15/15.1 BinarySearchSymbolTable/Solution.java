@@ -405,6 +405,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Key floor(Key key) {
+    	System.out.println("lkk");
         if (key == null) {
         	throw new IllegalArgumentException("argument to floor() is null");
         }
