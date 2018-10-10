@@ -129,6 +129,6 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:555:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:555:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:558: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:567:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:568:23: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 131 errors.

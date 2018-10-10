@@ -564,11 +564,13 @@ public class Solution {
 			}
 		}
 		String[] input = scan.nextLine().split(" ");
+		while (scan.hasNext()) {
 		switch(input[0]) {
 			case "max":
 			System.out.println(st.max());
 			break;
 			case "floor":
+			System.out.println("lk");
 			System.out.println(st.floor(input[1]));
 			break;
 			case "rank":
@@ -589,6 +591,7 @@ public class Solution {
 			default:
 			break;
 		}
+	}
 
 	}
 }
