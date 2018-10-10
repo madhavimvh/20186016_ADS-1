@@ -265,8 +265,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
-    	System.out.println(key);
-    	System.out.println(val);
+    	// System.out.println(key);
+    	// System.out.println(val);
         if (key == null) {
         	throw new IllegalArgumentException("first argument to put() is null");
         	}
@@ -558,11 +558,7 @@ public class Solution {
 		String[] arr = scan.nextLine().split(" ");
 		BinarySearchST<String, Integer> st = new BinarySearchST<String, Integer>();
 		for (int i = 0; i < arr.length; i++) {
-			if (!st.contains(arr[i])) {
 				st.put(arr[i], i);
-			} else {
-				st.put(arr[i], st.get(arr[i] + 1));
-			}
 		}
 		while (scan.hasNext()) {
 		String[] input = scan.nextLine().split(" ");
