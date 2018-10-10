@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -20,9 +20,9 @@ public class Solution {
         for (int i = 0; i < arr.length; i++) {
                 st.put(arr[i], i);
         }
-        while (scan.hasNext()) {
+        while(scan.hasNext()) {
         String[] input = scan.nextLine().split(" ");
-        switch(input[0]) {
+        switch (input[0]) {
             case "max":
             System.out.println(st.max());
             break;
