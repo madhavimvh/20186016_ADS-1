@@ -1,6 +1,1 @@
-Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:19: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:25:15: 'switch' is not followed by whitespace. [WhitespaceAround]
-Audit done.
-Checkstyle ends with 3 errors.
+Files to process must be specified, found 0.
