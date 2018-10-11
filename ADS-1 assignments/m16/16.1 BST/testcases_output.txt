@@ -16,11 +16,11 @@ Your Output:
 7
 2
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 null
 7
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:92)
+null
+7
 ----------------------------------------

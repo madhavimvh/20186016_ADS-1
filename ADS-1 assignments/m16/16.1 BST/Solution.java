@@ -89,7 +89,7 @@ public class Solution {
 				break;
 				case "get":
 				str = new BookInfo(arr[1], arr[2], Float.parseFloat(arr[2 + 1]));
-				if (bst.get(str) == -1) {
+				if (bst.get(str) == null) {
 					System.out.println("null");
 				} else {
 					System.out.println(bst.get(str));
