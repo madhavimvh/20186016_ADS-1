@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:14: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:46: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:69: Missing a Javadoc comment. [JavadocType]
@@ -15,4 +14,4 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:167: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:171: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 14 errors.
