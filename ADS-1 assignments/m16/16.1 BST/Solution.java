@@ -12,7 +12,7 @@ class BookInfo implements Comparable {
      */
     private String author;
     /**
-     * price is of type float
+     * price is of type float.
      */
     private float price;
     /**
@@ -44,7 +44,7 @@ class BookInfo implements Comparable {
         return this.author;
     }
     /**
-     * compareTo method
+     * compareTo method.
      *
      * @param      object  The object
      *
@@ -65,11 +65,26 @@ class BST<Key extends Comparable<Key>, Value> {
     /**
      * { var_description }.
      */
-    private Node root;             // root of BST
+    private Node root;
+    /**
+     * { item_description }.
+     */
     private class Node {
-        private BookInfo key;           // sorted by key
-        private Value val;         // associated data
+        /**
+         * { var_description }.
+         */
+        private BookInfo key;
+        /**
+         * { item_description }.
+         */
+        private Value val;
+        /**
+         * { item_description }.
+         */
         private Node left;
+        /**
+         * { var_description }.
+         */
         private Node right;
         /**
          * Constructs the object.
@@ -77,7 +92,7 @@ class BST<Key extends Comparable<Key>, Value> {
          * @param      keyy  The keyy
          * @param      vall  The vall
          */
-        public Node(final BookInfo keyy, final Value vall) {
+        Node(final BookInfo keyy, final Value vall) {
             this.key = keyy;
             this.val = vall;
             left = null;
@@ -87,7 +102,7 @@ class BST<Key extends Comparable<Key>, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public BST() {
+    BST() {
         root = null;
     }
     /**
@@ -136,16 +151,17 @@ class BST<Key extends Comparable<Key>, Value> {
         int cmp = key.compareTo(x.key);
         if (cmp < 0) {
             x.left  = put(x.left,  key, val);
-        }
-        else if (cmp > 0) {
+        } else if (cmp > 0) {
             x.right = put(x.right, key, val);
-        }
-        else {
+        } else {
             x.val   = val;
         }
         return x;
     }
 }
+/**
+ * { item_description }.
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -164,11 +180,13 @@ public final class Solution {
             String[] arr = scan.nextLine().split(",");
             switch (arr[0]) {
                 case "put":
-                BookInfo str = new BookInfo(arr[1], arr[2], Float.parseFloat(arr[2 + 1]));
+                BookInfo str = new BookInfo(arr[1], arr[2],
+                    Float.parseFloat(arr[2 + 1]));
                 bst.put(str, Integer.parseInt(arr[2 + 2]));
                 break;
                 case "get":
-                str = new BookInfo(arr[1], arr[2], Float.parseFloat(arr[2 + 1]));
+                str = new BookInfo(arr[1], arr[2],
+                    Float.parseFloat(arr[2 + 1]));
                 if (bst.get(str) == null) {
                     System.out.println("null");
                 } else {

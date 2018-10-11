@@ -1,17 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:46: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:69: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:70:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:71:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:72:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:73:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:80:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:90:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:139:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:142:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:149: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:167: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m16\16.1 BST\Solution.java:171: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
