@@ -25,7 +25,7 @@ public final class CubeSum implements Comparable<CubeSum> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public CubeSum(final int i, final int j) {
+    CubeSum(final int i, final int j) {
         this.sum = i*i*i + j*j*j;
         this.i = i;
         this.j = j;
