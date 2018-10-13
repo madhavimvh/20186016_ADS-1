@@ -27,8 +27,9 @@ public final class Solution {
 			Stock temp = max.delMax();
 			if (temp1 == temp.getPerchange() && temp2.equals(temp.getName())) {
 				num++;
-			}
+			} else {
 			s += temp + "\n";
+		 }
 			temp1 = temp.getPerchange();
 			temp2 = temp.getName();
 		}

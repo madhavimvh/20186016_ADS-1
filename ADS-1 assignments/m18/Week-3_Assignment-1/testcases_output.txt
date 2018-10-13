@@ -110,7 +110,6 @@ Oracle Fin 0.52
 
 Merck Ltd 4.83
 MRF 3.48
-MRF 3.48
 HEG Ltd 2.61
 Schaeffler India 2.57
 3M India 2.56
@@ -407,7 +406,6 @@ Abbott India 0.46
 Oracle Fin 0.52
 
 Merck Ltd 4.83
-MRF 3.48
 MRF 3.48
 HEG Ltd 2.61
 Schaeffler India 2.57
@@ -727,7 +725,6 @@ Merck Ltd -1.61
 Merck Ltd 4.83
 MRF 3.48
 HEG Ltd 2.61
-3M India 2.56
 3M India 2.56
 Bosch 2.3
 
