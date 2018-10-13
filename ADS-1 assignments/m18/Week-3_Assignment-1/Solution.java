@@ -10,6 +10,8 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 		MinPQ<Stock> min = new MinPQ<Stock>();
 		MaxPQ<Stock> max = new MaxPQ<Stock>();
+		BST<String, Integer> bstmin = new BST<String, Integer>();
+		BST<String, Integer> bstmax = new BST<String, Integer>();
 		int n = Integer.parseInt(scan.nextLine());
 		int N = 6 * n;
 		while (N > 0) {
@@ -20,18 +22,9 @@ public final class Solution {
 			N--;
 		}
 		String s = "";
-		float temp1 = 0.0f;
-		String temp2 = "";
-		int num = 5;
-		for (int i = 0; i < num; i++) {
+		for (int i = 0; i < 5; i++) {
 			Stock temp = max.delMax();
-			if (temp1 == temp.getPerchange() && temp2.equals(temp.getName())) {
-				num++;
-			} else {
 			s += temp + "\n";
-		 }
-			temp1 = temp.getPerchange();
-			temp2 = temp.getName();
 		}
 		System.out.println(s);
 		String a = "";
@@ -40,6 +33,18 @@ public final class Solution {
 		}
 		System.out.println(a);
 		}
+		// int num = 5;
+  //       for (int i = 0; i < num; i++) {
+  //           Stock temp = max.delMax();
+  //           bstmax.put(temp.getName(), bstmax.get(temp.getName()) + 1 );
+  //       }
+  //       System.out.println(bstmax);
+  //       for (int i = 0; i < num; i++) {
+  //               Stock temp = min.delMin();
+  //               bstmin.put(temp.getName(), bstmax.get(temp.getName()) + 1);
+  //               }
+  //               System.out.println(bstmin);
+  //           }
 	}
 }
 class Stock implements Comparable{
@@ -67,16 +72,113 @@ class Stock implements Comparable{
 			return -1;
 		}
 	}
-	public boolean contains(Stock that) {
-		if (this.name.equals(that.name) && this.perchange == that.perchange) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 	public String toString() {
 		return name + " " + perchange;
 	}
+}
+/**
+ * Class for bst.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
+class BST<Key extends Comparable<Key>, Value> {
+    /**
+     * { var_description }.
+     */
+    private Node root;
+    /**
+     * { item_description }.
+     */
+    private class Node {
+        /**
+         * { var_description }.
+         */
+        private Key key;
+        /**
+         * { item_description }.
+         */
+        private Value val;
+        /**
+         * { item_description }.
+         */
+        private Node left;
+        /**
+         * { var_description }.
+         */
+        private Node right;
+        /**
+         * Constructs the object.
+         *
+         * @param      keyy  The keyy
+         * @param      vall  The vall
+         */
+        Node(final Key keyy, final Value vall) {
+            this.key = keyy;
+            this.val = vall;
+            left = null;
+            right = null;
+        }
+    }
+    /**
+     * Initializes an empty symbol table.
+     */
+    BST() {
+        root = null;
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Value get(final Key key) {
+        Node s = root;
+        while (s != null) {
+            int cmp = key.compareTo(s.key);
+            if (cmp < 0) {
+                s = s.left;
+            } else if (cmp > 0) {
+                s = s.right;
+            } else if (cmp == 0) {
+                return s.val;
+            }
+        }
+        return null;
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
+    public void put(final Key key, final Value val) {
+        root = put(root, key, val);
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      val   The value
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node put(final Node x, final Key key, final Value val) {
+        if (x == null) {
+            return new Node(key, val);
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+            x.left  = put(x.left,  key, val);
+        } else if (cmp > 0) {
+            x.right = put(x.right, key, val);
+        } else {
+            x.val   = val;
+        }
+        return x;
+    }
 }
 // class Queries {
 // }

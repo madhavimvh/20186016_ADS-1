@@ -110,9 +110,9 @@ Oracle Fin 0.52
 
 Merck Ltd 4.83
 MRF 3.48
+MRF 3.48
 HEG Ltd 2.61
 Schaeffler India 2.57
-3M India 2.56
 
 ICRA -2.84
 Schaeffler India -2.57
@@ -124,7 +124,7 @@ Merck Ltd 4.83
 ICRA 2.84
 Schaeffler India 2.57
 3M India 2.56
-Bosch 2.3
+3M India 2.56
 
 Eicher Motors -1.6
 Nestle India -1.57
@@ -407,9 +407,9 @@ Oracle Fin 0.52
 
 Merck Ltd 4.83
 MRF 3.48
+MRF 3.48
 HEG Ltd 2.61
 Schaeffler India 2.57
-3M India 2.56
 
 ICRA -2.84
 Schaeffler India -2.57
@@ -421,7 +421,7 @@ Merck Ltd 4.83
 ICRA 2.84
 Schaeffler India 2.57
 3M India 2.56
-Bosch 2.3
+3M India 2.56
 
 Eicher Motors -1.6
 Nestle India -1.57
@@ -726,7 +726,7 @@ Merck Ltd 4.83
 MRF 3.48
 HEG Ltd 2.61
 3M India 2.56
-Bosch 2.3
+3M India 2.56
 
 ICRA -2.84
 Schaeffler India -2.57
@@ -737,8 +737,8 @@ HEG Ltd -1.61
 Merck Ltd 4.83
 ICRA 2.84
 Schaeffler India 2.57
+Bosch 2.3
 Tasty Bite Eat 2.23
-TTK Prestige 2.15
 
 Oracle Fin -1.61
 Eicher Motors -1.6
