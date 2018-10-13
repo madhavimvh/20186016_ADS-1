@@ -8,8 +8,8 @@ import java.util.Arrays;
 public final class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		MinPQ min = new MinPQ();
-		MaxPQ max = new MaxPQ();
+		MinPQ<Stock> min = new MinPQ<Stock>();
+		MaxPQ<Stock> max = new MaxPQ<Stock>();
 		int n = Integer.parseInt(scan.nextLine());
 		int N = 6 * n;
 		while (N > 0) {
@@ -20,8 +20,17 @@ public final class Solution {
 			N--;
 		}
 		String s = "";
+		float temp1 = 0.0f;
+		String temp2 = "";
 		for (int i = 0; i < 5; i++) {
-			s += max.delMax() + "\n";
+			Stock temp = max.delMax();
+			if (temp1 == temp.getPerchange() && temp2.equals(temp.getName())) {
+				i--;
+				return;
+			}
+			s += temp + "\n";
+			temp1 = temp.getPerchange();
+			temp2 = temp.getName();
 		}
 		System.out.println(s);
 		String a = "";
@@ -55,6 +64,13 @@ class Stock implements Comparable{
 			return 1;
 		} else {
 			return -1;
+		}
+	}
+	public boolean contains(Stock that) {
+		if (this.name.equals(that.name) && this.perchange == that.perchange) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 	public String toString() {

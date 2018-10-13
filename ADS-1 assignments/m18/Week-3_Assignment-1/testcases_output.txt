@@ -107,42 +107,6 @@ Sanofi India -1.21
 GSK Cons Health -0.84
 Abbott India 0.46
 Oracle Fin 0.52
-
-Merck Ltd 4.83
-MRF 3.48
-MRF 3.48
-HEG Ltd 2.61
-Schaeffler India 2.57
-
-ICRA -2.84
-Schaeffler India -2.57
-TTK Prestige -2.15
-Bharat Rasayan -2.0
-HEG Ltd -1.61
-
-Merck Ltd 4.83
-ICRA 2.84
-Schaeffler India 2.57
-3M India 2.56
-3M India 2.56
-
-Eicher Motors -1.6
-Nestle India -1.57
-WABCO India -1.33
-Tasty Bite Eat -1.23
-Sanofi India -1.21
-
-ICRA 5.84
-Lakshmi Machine 4.7
-Merck Ltd 3.83
-Bajaj Finserv 3.64
-TTK Prestige 3.15
-
-Eicher Motors -1.6
-Honeywell Auto -1.08
-Honeywell Auto -1.08
-GSK Cons Health -0.84
-Lakshmi Machine -0.7
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -404,42 +368,6 @@ Sanofi India -1.21
 GSK Cons Health -0.84
 Abbott India 0.46
 Oracle Fin 0.52
-
-Merck Ltd 4.83
-MRF 3.48
-MRF 3.48
-HEG Ltd 2.61
-Schaeffler India 2.57
-
-ICRA -2.84
-Schaeffler India -2.57
-TTK Prestige -2.15
-Bharat Rasayan -2.0
-HEG Ltd -1.61
-
-Merck Ltd 4.83
-ICRA 2.84
-Schaeffler India 2.57
-3M India 2.56
-3M India 2.56
-
-Eicher Motors -1.6
-Nestle India -1.57
-WABCO India -1.33
-Tasty Bite Eat -1.23
-Sanofi India -1.21
-
-ICRA 5.84
-Lakshmi Machine 4.7
-Merck Ltd 3.83
-Bajaj Finserv 3.64
-TTK Prestige 3.15
-
-Eicher Motors -1.6
-Honeywell Auto -1.08
-Honeywell Auto -1.08
-GSK Cons Health -0.84
-Lakshmi Machine -0.7
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -721,40 +649,4 @@ Schaeffler India -2.57
 Bharat Rasayan -2.0
 HEG Ltd -1.61
 Merck Ltd -1.61
-
-Merck Ltd 4.83
-MRF 3.48
-HEG Ltd 2.61
-3M India 2.56
-3M India 2.56
-
-ICRA -2.84
-Schaeffler India -2.57
-TTK Prestige -2.15
-Bharat Rasayan -2.0
-HEG Ltd -1.61
-
-Merck Ltd 4.83
-ICRA 2.84
-Schaeffler India 2.57
-Bosch 2.3
-Tasty Bite Eat 2.23
-
-Oracle Fin -1.61
-Eicher Motors -1.6
-Eicher Motors -1.6
-Nestle India -1.57
-3M India -1.56
-
-ICRA 5.84
-Lakshmi Machine 4.7
-Merck Ltd 3.83
-Bajaj Finserv 3.64
-TTK Prestige 3.15
-
-Eicher Motors -1.6
-WABCO India -1.33
-WABCO India -1.33
-Tasty Bite Eat -1.23
-Sanofi India -1.21
 ----------------------------------------
