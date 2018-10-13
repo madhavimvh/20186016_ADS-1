@@ -24,11 +24,11 @@ public final class Solution {
 			s += max.delMax() + "\n";
 		}
 		System.out.println(s);
-		// String a = "";
-		// for (int i = 0; i < 5; i++) {
-		// 	a += min.delMin() + "\n";
-		// }
-		// System.out.println(a);
+		String a = "";
+		for (int i = 0; i < 5; i++) {
+			a += min.delMin() + "\n";
+		}
+		System.out.println(a);
 		}
 	}
 }
