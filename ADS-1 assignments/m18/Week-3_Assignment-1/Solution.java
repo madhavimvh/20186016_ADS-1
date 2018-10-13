@@ -22,10 +22,11 @@ public final class Solution {
 		String s = "";
 		float temp1 = 0.0f;
 		String temp2 = "";
-		for (int i = 0; i < 5; i++) {
+		int num = 5;
+		for (int i = 0; i < num; i++) {
 			Stock temp = max.delMax();
 			if (temp1 == temp.getPerchange() && temp2.equals(temp.getName())) {
-				i--;
+				num++;
 			}
 			s += temp + "\n";
 			temp1 = temp.getPerchange();
