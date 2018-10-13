@@ -20,8 +20,13 @@ public final class Solution {
 			N--;
 		}
 		String s = "";
+		String temp = "";
 		for (int i = 0; i < 5; i++) {
-			s += max.delMax() + "\n";
+			temp = (String) max.delMax();
+			if (temp.contains(s)) {
+				return;
+			}
+			s += temp + "\n";
 		}
 		System.out.println(s);
 		String a = "";
