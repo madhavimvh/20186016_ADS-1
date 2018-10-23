@@ -1,0 +1,20 @@
+Starting audit...
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:19:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:21:31: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:23: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:23:95: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:23:108: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:26: Line is longer than 80 characters (found 120). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:26:114: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:35: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:38: Line is longer than 80 characters (found 122). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:38:116: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:41: Line is longer than 80 characters (found 124). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:41:118: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:44: Line is longer than 80 characters (found 103). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:44:98: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:58: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m20\20.1 BST\Solution.java:78:13: '(' is preceded with whitespace. [MethodParamPad]
+Audit done.
+Checkstyle ends with 17 errors.
