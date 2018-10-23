@@ -1,6 +1,19 @@
 import java.util.Scanner;
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Solution for class.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		BST bst = new BST();
 		while(scan.hasNext()) {
@@ -32,18 +45,46 @@ public class Solution {
 	}
 }
 class Key implements Comparable {
+	/**
+	 * name is of type string.
+	 */
 	private String name;
+	/**
+	 * author is of type string.
+	 */
 	private String author;
+	/**
+	 * price is of type float.
+	 */
 	private float price;
-	Key (String namee, String authorr, float pricee) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      namee    The namee
+	 * @param      authorr  The authorr
+	 * @param      pricee   The pricee
+	 */
+	Key (final String namee, final String authorr, final float pricee) {
 		this.name = namee;
 		this.author = authorr;
 		this.price = pricee;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      object  The object
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int compareTo(final Object object) {
 		Key that = (Key) object;
 		return this.name.compareTo(that.name);
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		return name + ", " + author + ", " + price;
 	}
