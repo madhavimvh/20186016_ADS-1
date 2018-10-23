@@ -26,7 +26,7 @@ public class Solution {
 				System.out.println(bst.floor(new Key(tokens[1], tokens[2], Float.parseFloat(tokens[3]))));
 				break;
 				case "ceiling":
-				System.out.println(bst.floor(new Key(tokens[1], tokens[2], Float.parseFloat(tokens[3]))));
+				System.out.println(bst.ceiling(new Key(tokens[1], tokens[2], Float.parseFloat(tokens[3]))));
 				break;
 			}
 		}
