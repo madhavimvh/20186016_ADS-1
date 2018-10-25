@@ -17,7 +17,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        SeparateChainingHashST<String, Integer> hash = 
+        SeparateChainingHashST<String, Integer> hash =
         new SeparateChainingHashST<String, Integer>();
         String intg = scan.nextLine();
         String[] arr = scan.nextLine().split(" ");
