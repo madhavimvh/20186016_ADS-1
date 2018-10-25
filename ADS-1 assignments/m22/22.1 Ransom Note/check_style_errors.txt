@@ -1,15 +1,8 @@
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:2:1: Redundant import from the java.lang package - java.lang.Iterable. [RedundantImport]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:2:8: Unused import - java.lang.Iterable. [UnusedImports]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:3:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:5:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:7: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:10:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:12: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:20:47: ')' is preceded with whitespace. [ParenPad]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:21:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:20: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:23:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:32:47: ')' is preceded with whitespace. [ParenPad]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:33:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
