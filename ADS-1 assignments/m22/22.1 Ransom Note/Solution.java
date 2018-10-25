@@ -279,7 +279,7 @@ public class Solution {
 
         String[] tobeSearched = scan.nextLine().split(" ");
         for (int i = 0; i < tobeSearched.length; i++) {
-            if(hash.get(tobeSearched[i]) == 0) {
+            if(hash.get(tobeSearched[i]) == 0 || hash.get(tobeSearched[i]) == null) {
                 System.out.print("No");
                 return;
             } else {
