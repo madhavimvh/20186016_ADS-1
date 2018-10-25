@@ -206,7 +206,6 @@ class SeparateChainingHashST<Key, Value> {
     public Value get(Key key) {
         if (key == null) throw new IllegalArgumentException("key is null");
         int i = hash(key);
-        System.out.println(i);
         return st[i].get(key);
     } 
 
@@ -280,12 +279,16 @@ public class Solution {
 
         String[] tobeSearched = scan.nextLine().split(" ");
         for (int i = 0; i < tobeSearched.length; i++) {
-            System.out.println(tobeSearched[i]);
-            if(hash.get(tobeSearched[i]) == 0 || hash.get(tobeSearched[i]) == null) {
-                System.out.print("No");
-                return;
+            if (hash.contains(tobeSearched[i]) ) {
+                if(hash.get(tobeSearched[i]) == 0) {
+                    System.out.print("No");
+                    return;
+                } else {
+                    hash.put(tobeSearched[i], hash.get(tobeSearched[i]) - 1);
+                }
             } else {
-                hash.put(tobeSearched[i], hash.get(tobeSearched[i]) - 1);
+                System.out.print("No");
+                    return;
             }
         }
         System.out.println("Yes");
