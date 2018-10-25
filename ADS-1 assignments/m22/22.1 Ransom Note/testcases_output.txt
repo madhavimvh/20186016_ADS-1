@@ -4,23 +4,24 @@ Yes
 Your Output: 
 Yes
 ----------------------------------------
-########## Testcase 1: Failed ##########
-Expected Output: 
-No
-Your Output: 
-Yes
-----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 No
 Your Output: 
 No
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 No
 Your Output: 
-Yes
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:282)
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+No
+Your Output: 
+No
 ----------------------------------------
 ########## Testcase 4: Passed ##########
 Expected Output: 
