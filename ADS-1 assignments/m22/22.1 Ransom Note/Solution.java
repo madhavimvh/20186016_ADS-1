@@ -204,7 +204,7 @@ class SeparateChainingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        if (key == null) return null;
         int i = hash(key);
         return st[i].get(key);
     } 
