@@ -96,8 +96,11 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:266:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:267:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:267:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:272: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:269: Line is longer than 80 characters (found 101). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:272:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:277:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:274: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:282:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:286:68: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m22\22.1 Ransom Note\Solution.java:286:69: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 100 errors.
+Checkstyle ends with 103 errors.

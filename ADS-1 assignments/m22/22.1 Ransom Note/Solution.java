@@ -266,17 +266,24 @@ class SeparateChainingHashST<Key, Value> {
 public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        SeparateChainingHashST hash = new SeparateChainingHashST();
+        SeparateChainingHashST<String, Integer> hash = new SeparateChainingHashST<String, Integer>();
         String intg = scan.nextLine();
         String[] arr = scan.nextLine().split(" ");
-        for(int i = 0; i < arr.length; i++)
-            hash.put(arr[i], i);
+        for(int i = 0; i < arr.length; i++) {
+            if (hash.contains(arr[i])) {
+                hash.put(arr[i], hash.get(arr[i]) + 1); 
+            } else {
+                hash.put(arr[i], 1);
+            }
+        }
 
         String[] tobeSearched = scan.nextLine().split(" ");
         for (int i = 0; i < tobeSearched.length; i++) {
-            if(hash.get(tobeSearched[i]) == null) {
+            if(hash.get(tobeSearched[i]) == 0) {
                 System.out.print("No");
                 return;
+            } else {
+                hash.put(tobeSearched[i], hash.get(tobeSearched[i]) - 1);
             }
         }
         System.out.println("Yes");
