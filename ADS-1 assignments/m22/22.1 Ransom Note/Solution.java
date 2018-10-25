@@ -280,12 +280,12 @@ public class Solution {
         String[] tobeSearched = scan.nextLine().split(" ");
         for (int i = 0; i < tobeSearched.length; i++) {
             if (hash.contains(tobeSearched[i]) ) {
-                // if(hash.get(tobeSearched[i]) == 0) {
-                //     System.out.print("No");
-                //     return;
-                // } else {
-                //     hash.put(tobeSearched[i], hash.get(tobeSearched[i]) - 1);
-                // }
+                if(hash.get(tobeSearched[i]) == 0) {
+                    System.out.print("No");
+                    return;
+                } else {
+                    hash.put(tobeSearched[i], hash.get(tobeSearched[i]) - 1);
+                }
             } else {
                 System.out.print("No");
                 return;
