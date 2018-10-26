@@ -59,9 +59,9 @@ class LinearProbingHashST<Key, Value> {
     }
 
     // hash function for keys - returns value between 0 and M-1
-    private int hash(Key key) {
+    private Integer hash(Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
-        return (11 * (int) key) % m;
+        return (11 * (Integer) key) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
