@@ -167,20 +167,19 @@ class LinearProbingHashST<Key, Value> {
         assert check();
     }
     public String display() {
-        if (keys.length == 0) {
-            String s = "{}";
-            return s;
-        }
         String s = "{";
         int i;
         for (i = 0; i < keys.length - 1; i++) {
-            if (keys[i] != null)
+            if (keys[i] != null) {
                 s += keys[i] + ":" + vals[i] + ", ";
+            }
         }
-        if (keys[i] != null)
+        if (keys[i] != null) {
             s += keys[i] + ":" + vals[i];
-        else 
+        }
+        else {
             s = s.substring(0, s.length() - 2);
+        }
         s += "}";
         return s;
     }
