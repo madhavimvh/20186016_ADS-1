@@ -41,6 +41,7 @@ public final class Solution {
 				}
 				System.out.println(inp1.getName() + " " + inp1.getPerchange());
 			}
+			System.out.println();
 		}
 		// int num = 5;
   //       for (int i = 0; i < num; i++) {
