@@ -12,7 +12,11 @@ public class Solution {
 				st.put(arr[1], Integer.parseInt(arr[2]));
 				break;
 				case "display":
+				try {
 				System.out.println(st.display());
+				} catch(Exception ex) {
+					System.out.println("{}");
+				}
 				break;
 				case "delete":
 				st.delete(arr[1]);
