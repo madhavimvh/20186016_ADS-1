@@ -6,6 +6,6 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:5: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:9:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m23\23.1 Hashing with Linear Probing\Solution.java:10:31: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 8 errors.

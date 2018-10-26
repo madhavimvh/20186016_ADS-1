@@ -59,9 +59,9 @@ class LinearProbingHashST<Key, Value> {
     }
 
     // hash function for keys - returns value between 0 and M-1
-    private Integer hash(Key key) {
+    private int hash(Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
-        return (11 * (Integer) key) % m;
+        return (11 * key.hashCode()) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
@@ -168,10 +168,16 @@ class LinearProbingHashST<Key, Value> {
     }
     public String display() {
         String s = "{";
-        for (int i = 0; i < keys.length - 1; i++) {
-            s += keys[i] + ":" + vals[i] + ", ";
+        int i;
+        for (i = 0; i < keys.length - 1; i++) {
+            if (keys[i] != null)
+                s += keys[i] + ":" + vals[i] + ", ";
         }
-        s += keys[keys.length] + ":" + vals[keys.length];
+        if (keys[i] != null)
+            s += keys[i] + ":" + vals[i];
+        else 
+            s = s.substring(0, s.length() - 2);
+        s += "}";
         return s;
     }
 
