@@ -26,6 +26,14 @@ public class Solution {
 						System.out.println(st.get(keys).getName());
 					}
 				}
+			} else if (inpp[0].equals("LE")) {
+				System.out.println("hkjh");
+				for (Double keys : st.keys()) {
+					System.out.println(keys);
+					if (keys <= Double.parseDouble(inpp[1])) {
+						System.out.println(st.get(keys).getName());
+					}
+				}
 			}
 			// else if (inpp[0].equals("LE")) {
 
@@ -62,5 +70,14 @@ class Studentdata {
 
 	// 	}
 	// }
+	public int compareTo(Studentdata that) {
+		if (this.getMarks() > that.getMarks()) {
+			return 1;
+		} else if (this.getMarks() < that.getMarks()) {
+			return -1;
+		} else {
+			return (this.getName().compareTo(that.getName()));
+		}
+	}
 
 }
