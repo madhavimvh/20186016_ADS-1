@@ -22,7 +22,8 @@ class Studentdata implements Comparable<Studentdata> {
      * @param      namee        The namee
      * @param      totalmarkss  The totalmarkss
      */
-    Studentdata(final int rollnoo, final String namee, final double totalmarkss) {
+    Studentdata(final int rollnoo, final String namee,
+        final double totalmarkss) {
         rollno = rollnoo;
         name = namee;
         totalmarks = totalmarkss;
@@ -73,7 +74,7 @@ class Studentdata implements Comparable<Studentdata> {
             return 1;
         } else if (this.getRollno() < that.getRollno()) {
             return -1;
-        } 
+        }
         return 0;
     }
 
@@ -109,8 +110,8 @@ public final class Solution {
             String[] inpp = scan.nextLine().split(" ");
             if (inpp[0].equals("BE")) {
                 for (Studentdata keys : st.keys()) {
-                    if (keys.getMarks() >= Double.parseDouble(inpp[1]) &&
-                        keys.getMarks() <= Double.parseDouble(inpp[2])) {
+                    if (keys.getMarks() >= Double.parseDouble(inpp[1])
+                        && keys.getMarks() <= Double.parseDouble(inpp[2])) {
                         System.out.println(keys.getName());
                     }
                 }

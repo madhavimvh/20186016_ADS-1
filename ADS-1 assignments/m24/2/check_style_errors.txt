@@ -1,7 +1,4 @@
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:25: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:112:72: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
