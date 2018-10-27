@@ -29,16 +29,17 @@ class Studentdata implements Comparable<Studentdata> {
 			return 1;
 		} else if (this.getMarks() < that.getMarks()) {
 			return -1;
-		} else if (this.getName().compareTo(that.getName()) > 0){
-			return  1;
-		} else if (this.getName().compareTo(that.getName()) < 0) {
-			return -1;
 		}
-		// if (this.getRollno() < that.getRollno()) {
-		// 	return 1;
-		// } else if (this.getRollno() < that.getRollno()) {
+		//  else if (this.getName().compareTo(that.getName()) > 0){
+		// 	return  1;
+		// } else if (this.getName().compareTo(that.getName()) < 0) {
 		// 	return -1;
-		// } 
+		// }
+		if (this.getRollno() < that.getRollno()) {
+			return 1;
+		} else if (this.getRollno() < that.getRollno()) {
+			return -1;
+		} 
 		return 0;
 	}
 
