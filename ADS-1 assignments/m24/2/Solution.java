@@ -13,14 +13,18 @@ public class Solution {
 		for (int i = 0; i < intt; i++) {
 			String[] inpp = scan.nextLine().split(" ");
 			if (inpp[0].equals("BE")) {
-				for (Double keys: st.keys()) {
-					// System.out.println(keys);
-					// System.out.println(inpp[1]);
+				for (Double keys : st.keys()) {
 					if (keys >= Double.parseDouble(inpp[1]) && keys <= Double.parseDouble(inpp[2])) {
 						System.out.println(st.get(keys).getName());
 					}
 				}
-			} 
+			} else if (inpp[0].equals("GE")) {
+				for (Double keys : st.keys()) {
+					if (keys >= Double.parseDouble(inpp[1])) {
+						System.out.println(st.get(keys).getName());
+					}
+				}
+			}
 			// else if (inpp[0].equals("LE")) {
 
 			// 	}
