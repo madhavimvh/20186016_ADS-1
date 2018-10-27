@@ -1,24 +1,64 @@
 import java.util.Scanner;
-
+/**
+ * Class for studentdata.
+ */
 class Studentdata implements Comparable<Studentdata> {
+    /**
+     * rollno is of type int.
+     */
     private int rollno;
+    /**
+     * name is of type string.
+     */
     private String name;
+    /**
+     * totalmarks is of type double.
+     */
     private double totalmarks;
-    Studentdata(int rollnoo, String namee, double totalmarkss) {
+    /**
+     * Constructs the object.
+     *
+     * @param      rollnoo      The rollnoo
+     * @param      namee        The namee
+     * @param      totalmarkss  The totalmarkss
+     */
+    Studentdata(final int rollnoo, final String namee, final double totalmarkss) {
         rollno = rollnoo;
         name = namee;
         totalmarks = totalmarkss;
     }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return name;
     }
+    /**
+     * Gets the rollno.
+     *
+     * @return     The rollno.
+     */
     public int getRollno() {
         return rollno;
     }
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
     public double getMarks() {
         return totalmarks;
     }
-    public int compareTo(Studentdata that) {
+    /**
+     * { function_description }.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }.
+     */
+    public int compareTo(final Studentdata that) {
         if (this.getMarks() > that.getMarks()) {
             return 1;
         } else if (this.getMarks() < that.getMarks()) {
@@ -38,8 +78,21 @@ class Studentdata implements Comparable<Studentdata> {
     }
 
 }
-public class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         RedBlackBST<Studentdata, Double> st =
         new RedBlackBST<Studentdata, Double>();
