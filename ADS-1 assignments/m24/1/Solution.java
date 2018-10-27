@@ -35,7 +35,6 @@ public final class Solution {
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
-                
             } else if (Integer.parseInt(tokenss[2]) == 2) {
                 if (st.contains(Integer.parseInt(tokenss[1]))) {
                     System.out.println(st.get(
