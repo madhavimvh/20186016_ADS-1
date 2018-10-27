@@ -14,6 +14,7 @@ public class Solution {
 			String[] inpp = scan.nextLine().split(" ");
 			if (inpp[0].equals("BE")) {
 				for (Double keys: st.keys()) {
+					System.out.println("khkjh");
 					if (keys <= Double.parseDouble(inpp[1]) && keys >= Double.parseDouble(inpp[2])) {
 						System.out.println(st.get(keys).getName());
 					}
