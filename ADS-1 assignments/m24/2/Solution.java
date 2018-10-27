@@ -19,6 +19,7 @@ public class Solution {
 					}
 				}
 			} else if (inpp[0].equals("GE")) {
+				System.out.println("hkjh");
 				for (Double keys : st.keys()) {
 					if (keys >= Double.parseDouble(inpp[1])) {
 						System.out.println(st.get(keys).getName());
