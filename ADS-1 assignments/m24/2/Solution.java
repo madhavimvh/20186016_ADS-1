@@ -19,9 +19,9 @@ public class Solution {
 					}
 				}
 			} else if (inpp[0].equals("GE")) {
-				System.out.println("hkjh");
+				// System.out.println("hkjh");
 				for (Double keys : st.keys()) {
-					System.out.println(keys);
+					// System.out.println(keys);
 					if (keys >= Double.parseDouble(inpp[1])) {
 						System.out.println(st.get(keys).getName());
 					}

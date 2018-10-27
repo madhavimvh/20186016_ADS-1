@@ -58,68 +58,24 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
-hkjh
-2.0
-11.2
-13.3
-14.4
-15.45
-17.5
-19.65
-23.4
-24.3
-35.5
-42.3
-43.8
-44.7
-45.4
-45.5
-45.9
-49.3
-54.3
-54.7
-55.4
-56.7
-64.6
-65.7
-66.4
-76.4
 Clark
-76.5
 Rhian Cahill
-77.3
 Sasha Cagen
-78.2
 Rivest
-85.6
 Access
-87.6
 Rachel Caine
-88.3
 Alice
-88.4
 Biba Caggiano
-88.8
 Peter
-90.6
 David Cabot
-91.2
 Adams
-94.5
 Yassi
-98.3
 Wayne
-98.7
 Jonathan Cainer
-99.3
 Jeannette Caines
-99.4
 Charles
-100.0
 Bob
-100.1
 Knuth
-100.7
 Maria Cabezas
 hkjh
 2.0
@@ -1164,307 +1120,17 @@ Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
 Your Output: 
-hkjh
-0.051
-1.156
-1.224
-1.603
-1.651
-3.336
-3.391
-3.813
-3.876
-4.048
-4.058
-4.539
-4.731
-4.782
-4.893
-5.41
-5.739
-5.843
-5.852
-6.364
-6.627
-6.892
-7.034
-7.065
-7.213
-7.803
-8.108
-8.36
-8.463
-8.495
-8.759
-8.834
-10.0
-10.3
-10.31
-10.42
-11.09
-11.23
-11.58
-11.63
-11.84
-12.06
-12.21
-12.42
-12.7
-12.86
-14.24
-14.37
-14.77
-14.88
-15.56
-15.89
-16.5
-16.78
-17.2
-17.39
-17.5
-17.54
-17.55
-17.86
-18.28
-19.24
-19.32
-20.62
-21.24
-21.53
-21.98
-23.21
-23.87
-24.02
-24.34
-24.4
-24.51
-24.84
-25.44
-25.92
-26.33
-26.54
-26.87
-27.87
-28.06
-28.69
-28.71
-29.77
-30.1
-30.31
-30.69
-30.75
-30.97
-31.38
-31.82
-31.84
-32.81
-32.99
-34.0
-34.21
-35.14
-35.15
-35.46
-35.47
-35.6
-35.71
-35.74
-35.81
-36.24
-36.4
-36.88
-37.03
-38.7
-39.15
-39.78
-40.06
-40.1
-40.43
-40.94
-40.95
-41.03
-41.33
-42.81
-43.06
-43.12
-43.33
-43.91
-44.22
-44.63
-45.09
-45.28
-45.32
-45.39
-46.77
-46.81
-47.14
-47.48
-48.28
-48.67
-48.77
-48.84
-49.4
-49.47
-49.66
-50.24
-50.59
-50.75
-50.8
-50.88
-50.89
-51.43
-52.12
-52.26
-52.46
-53.48
-53.79
-54.08
-54.45
-54.82
-55.34
-56.43
-56.76
-57.53
-57.7
-57.79
-59.14
-59.62
-59.63
-59.67
-59.69
-59.95
-60.27
-60.37
-60.54
-61.06
-61.23
-61.6
-62.0
-62.03
-62.17
-62.74
-62.8
-63.33
-63.57
-64.08
-65.06
-66.2
-66.25
-66.37
-68.0
-69.17
-69.29
-69.73
-69.74
-69.82
-70.49
-71.27
-71.85
-72.14
-72.19
-72.2
-72.38
-72.86
-73.35
-73.45
-73.47
-73.58
-73.72
-74.05
-74.62
-74.64
-75.0
-75.18
-75.6
-75.86
-76.01
-76.29
-76.48
-76.56
-76.93
-77.69
-78.56
-78.96
-79.09
-79.31
-79.38
-79.49
-79.51
-79.58
-79.87
-80.31
-81.1
-81.65
-81.72
-82.13
-82.63
-83.43
-83.66
-84.28
-84.43
-84.78
-85.27
-85.55
-85.69
-85.84
-85.89
-86.65
-87.0
-87.16
-87.26
-87.31
-87.6
-87.74
-88.05
-88.39
-88.48
-89.14
-89.47
-89.61
-89.68
-89.85
-90.36
-90.69
-90.74
-90.78
-90.91
-91.15
-91.38
-91.46
-91.51
-91.92
-92.0
-92.85
-93.21
-93.22
-93.81
-93.95
-93.97
-94.75
-95.0
-95.79
-96.83
 Stuart B. MacBride
-97.54
 Wayne Pacelle
-97.83
 H3CZ
-98.13
 John Jacobs
-98.39
 Alison Mackey PhD
-98.56
 Amanda Mackenzie Stuart
-98.7
 Elaine Pagels
-98.87
 Tessa Hadley
-99.38
 Sammy Hagar
-99.46
 Keith Habersberger
-99.65
 Yamile Saied Méndez
-99.9
 Namita Jain
 hkjh
 0.051
@@ -1942,392 +1608,102 @@ Alex James
 99.46
 99.65
 99.9
-hkjh
-0.051
-1.156
-1.224
-1.603
-1.651
-3.336
-3.391
-3.813
-3.876
-4.048
-4.058
-4.539
-4.731
-4.782
-4.893
-5.41
-5.739
-5.843
-5.852
-6.364
-6.627
-6.892
-7.034
-7.065
-7.213
-7.803
-8.108
-8.36
-8.463
-8.495
-8.759
-8.834
-10.0
-10.3
-10.31
-10.42
-11.09
-11.23
-11.58
-11.63
-11.84
-12.06
-12.21
-12.42
-12.7
-12.86
-14.24
-14.37
-14.77
-14.88
-15.56
-15.89
-16.5
-16.78
-17.2
-17.39
-17.5
-17.54
-17.55
-17.86
-18.28
-19.24
-19.32
-20.62
-21.24
-21.53
-21.98
-23.21
-23.87
-24.02
-24.34
-24.4
-24.51
-24.84
-25.44
-25.92
-26.33
-26.54
-26.87
-27.87
-28.06
-28.69
-28.71
-29.77
-30.1
-30.31
-30.69
-30.75
-30.97
-31.38
-31.82
-31.84
-32.81
-32.99
-34.0
-34.21
-35.14
-35.15
-35.46
-35.47
-35.6
-35.71
-35.74
-35.81
-36.24
-36.4
-36.88
-37.03
-38.7
-39.15
-39.78
-40.06
-40.1
-40.43
-40.94
-40.95
-41.03
-41.33
-42.81
-43.06
-43.12
-43.33
-43.91
-44.22
-44.63
-45.09
-45.28
-45.32
-45.39
-46.77
-46.81
-47.14
-47.48
-48.28
-48.67
-48.77
-48.84
-49.4
-49.47
-49.66
-50.24
-50.59
-50.75
-50.8
-50.88
-50.89
-51.43
-52.12
-52.26
-52.46
-53.48
-53.79
-54.08
-54.45
-54.82
-55.34
-56.43
-56.76
-57.53
-57.7
-57.79
-59.14
-59.62
-59.63
-59.67
-59.69
-59.95
-60.27
-60.37
-60.54
-61.06
-61.23
-61.6
-62.0
-62.03
-62.17
-62.74
-62.8
-63.33
-63.57
-64.08
-65.06
-66.2
-66.25
-66.37
-68.0
-69.17
-69.29
-69.73
-69.74
-69.82
-70.49
-71.27
 Fiona MacKenzie
-71.85
 Mark Haddon
-72.14
 Julie Mac
-72.19
 James Macdonald
-72.2
 Jane MacDougall
-72.38
 Tim Page
-72.86
 Harvey B. Mackay
-73.35
 Jennifer Page
-73.45
 Audrey Mackaman
-73.47
 Burton L. Mack
-73.58
 Jessie Haas
-73.72
 Joshilyn Jackson
-74.05
 Melissa Jacobs
-74.62
 Michael Hale
-74.64
 Jeff MacGregor
-75.0
 Fiona MacDonald
-75.18
 Katharina Hagena
-75.6
 Sarah Jacoby
-75.86
 Anna-Liisa Hakkarainen
-76.01
 Joie Jager-Hyman
-76.29
 Alex Palmer
-76.48
 David Hagedorn
-76.56
 M MacCallum
-76.93
 James B. Maas
-77.69
 Manoj Pandey
-78.56
 John W. Jacobs
-78.96
 Thomas Paine
-79.09
 Richard Mabey
-79.31
 Jo Jackson King
-79.38
 Nick Page
-79.49
 Kinley MacGregor
-79.51
 Liza Palmer
-79.58
 Libby Jackson
-79.87
 Kristin Halbrook
-80.31
 Virginia Macgregor
-81.1
 Betty Halbreich
-81.65
 Cindy Dr. Pan
-81.72
 Bruce Hale
-82.13
 Jeff Mack
-82.63
 Annie Maccoby
-83.43
 Heather Hach
-83.66
 Jean Reynolds Page
-84.28
 Jamuna Pai
-84.43
 Myla Jackson
-84.78
 Kady MacDonald Denton
-85.27
 Roger Lea MacBride
-85.55
 Andy Paciorek
-85.69
 J.D. Jackson
-85.84
 Simcha Jacobovici
-85.89
 Niall Mackenzie
-86.65
 Ann-Marie MacDonald
-87.0
 Yossi Klein Halevi
-87.16
 Gene Hackman
-87.26
 Tony Macaulay
-87.31
 Fiona Palmer
-87.6
 Lynn F. Jacobs
-87.74
 Araminta Hall
-88.05
 Sara Mackenzie
-88.39
 Margaret Read MacDonald
-88.48
 Carla Jablonski
-89.14
 Mary Downing Hahn
-89.47
 Robert Macfarlane
-89.61
 Robert Jackson
-89.68
 Jane Paley
-89.85
 Emily Hainsworth
-90.36
 Sari Padorr
-90.69
 Mary MacCracken
-90.74
 Michael Haag
-90.78
 Maxwell Mackenzie
-90.91
 Kevin MacAllister
-91.15
 Michael Jaime-Becerra
-91.38
 David Macfarlane
-91.46
 Jake Page
-91.51
 John Hornor Jacobs
-91.92
 H. JACKSON
-92.0
 Peter Maas
-92.85
 Keach Hagey
-93.21
 Sean Padraic
-93.22
 Sang Pak
-93.81
 Thomas Pakenham
-93.95
 Terrence J
-93.97
 Shane Jacobson
-94.75
 Hannah Paasch
-95.0
 Svetlana Palmer
-95.79
 Helen Palmer
-96.83
 Stuart B. MacBride
-97.54
 Wayne Pacelle
-97.83
 H3CZ
-98.13
 John Jacobs
-98.39
 Alison Mackey PhD
-98.56
 Amanda Mackenzie Stuart
-98.7
 Elaine Pagels
-98.87
 Tessa Hadley
-99.38
 Sammy Hagar
-99.46
 Keith Habersberger
-99.65
 Yamile Saied Méndez
-99.9
 Namita Jain
 hkjh
 0.051
@@ -2652,443 +2028,153 @@ Scott Palmer
 99.46
 99.65
 99.9
-hkjh
-0.051
-1.156
-1.224
-1.603
-1.651
-3.336
-3.391
-3.813
-3.876
-4.048
-4.058
-4.539
-4.731
-4.782
-4.893
-5.41
-5.739
-5.843
-5.852
-6.364
-6.627
-6.892
-7.034
-7.065
-7.213
-7.803
-8.108
-8.36
-8.463
-8.495
-8.759
-8.834
-10.0
-10.3
-10.31
-10.42
-11.09
-11.23
-11.58
-11.63
-11.84
-12.06
-12.21
-12.42
-12.7
-12.86
-14.24
-14.37
-14.77
-14.88
-15.56
-15.89
-16.5
-16.78
-17.2
-17.39
-17.5
-17.54
-17.55
-17.86
-18.28
-19.24
-19.32
-20.62
-21.24
-21.53
-21.98
-23.21
-23.87
-24.02
-24.34
-24.4
-24.51
-24.84
-25.44
-25.92
-26.33
-26.54
-26.87
-27.87
-28.06
-28.69
-28.71
-29.77
-30.1
-30.31
-30.69
-30.75
-30.97
-31.38
-31.82
-31.84
-32.81
-32.99
-34.0
-34.21
-35.14
-35.15
-35.46
-35.47
-35.6
-35.71
-35.74
-35.81
-36.24
-36.4
-36.88
-37.03
-38.7
-39.15
-39.78
-40.06
-40.1
-40.43
-40.94
-40.95
-41.03
-41.33
-42.81
-43.06
-43.12
-43.33
-43.91
-44.22
-44.63
-45.09
-45.28
-45.32
-45.39
-46.77
-46.81
-47.14
-47.48
-48.28
-48.67
-48.77
-48.84
-49.4
-49.47
-49.66
-50.24
-50.59
 Christopher N. Page
-50.75
 Ellie Macdonald
-50.8
 Portia MacIntosh
-50.88
 Kathryn Ma
-50.89
 Piers A. Jacob
-51.43
 Norm MacDonald
-52.12
 Tracey Jackson
-52.26
 Helena S. Paige
-52.46
 Penny Palmano
-53.48
 Ellen Jackson
-53.79
 Gracie MacGregor
-54.08
 Gerry Hadden
-54.45
 A.N.D Haksar
-54.82
 James Graham Hale
-55.34
 Merle Haggard
-56.43
 Steven Pacey
-56.76
 Edward Paice
-57.53
 Shannon Hale
-57.7
 Norm Macdonald
-57.79
 Michael Page
-59.14
 George Packer
-59.62
 Steph Jagger
-59.63
 Roger O.M.D. Jahnke
-59.67
 Simon Jacobson
-59.69
 Warren Mackenzie
-59.95
 Tim Andres Pabon
-60.27
 Sylvie Haisman
-60.37
 Nate Jackson
-60.54
 Linden MacIntyre
-61.06
 Juliette MacIver
-61.23
 Madeleine Maby
-61.6
 Dana C. Jack
-62.0
 Bristol Palin
-62.03
 Aparna Jain
-62.17
 Taylor Hackford
-62.74
 David Haig
-62.8
 Lorrie Mack
-63.33
 Sophie Jaff
-63.57
 Bradley Jackson
-64.08
 Robert Ian MacKenzie
-65.06
 Ruby Jackson
-66.2
 Charles B. Macdonald
-66.25
 Greg Page
-66.37
 Andrew Macdonald
-68.0
 Alex James
-69.17
 Marina Palmer
-69.29
 David Jacobs
-69.73
 Jeannette Haien
-69.74
 Daniel Hahn
-69.82
 Sara Palacios
-70.49
 Charles Panati
-71.27
 Fiona MacKenzie
-71.85
 Mark Haddon
-72.14
 Julie Mac
-72.19
 James Macdonald
-72.2
 Jane MacDougall
-72.38
 Tim Page
-72.86
 Harvey B. Mackay
-73.35
 Jennifer Page
-73.45
 Audrey Mackaman
-73.47
 Burton L. Mack
-73.58
 Jessie Haas
-73.72
 Joshilyn Jackson
-74.05
 Melissa Jacobs
-74.62
 Michael Hale
-74.64
 Jeff MacGregor
-75.0
 Fiona MacDonald
-75.18
 Katharina Hagena
-75.6
 Sarah Jacoby
-75.86
 Anna-Liisa Hakkarainen
-76.01
 Joie Jager-Hyman
-76.29
 Alex Palmer
-76.48
 David Hagedorn
-76.56
 M MacCallum
-76.93
 James B. Maas
-77.69
 Manoj Pandey
-78.56
 John W. Jacobs
-78.96
 Thomas Paine
-79.09
 Richard Mabey
-79.31
 Jo Jackson King
-79.38
 Nick Page
-79.49
 Kinley MacGregor
-79.51
 Liza Palmer
-79.58
 Libby Jackson
-79.87
 Kristin Halbrook
-80.31
 Virginia Macgregor
-81.1
 Betty Halbreich
-81.65
 Cindy Dr. Pan
-81.72
 Bruce Hale
-82.13
 Jeff Mack
-82.63
 Annie Maccoby
-83.43
 Heather Hach
-83.66
 Jean Reynolds Page
-84.28
 Jamuna Pai
-84.43
 Myla Jackson
-84.78
 Kady MacDonald Denton
-85.27
 Roger Lea MacBride
-85.55
 Andy Paciorek
-85.69
 J.D. Jackson
-85.84
 Simcha Jacobovici
-85.89
 Niall Mackenzie
-86.65
 Ann-Marie MacDonald
-87.0
 Yossi Klein Halevi
-87.16
 Gene Hackman
-87.26
 Tony Macaulay
-87.31
 Fiona Palmer
-87.6
 Lynn F. Jacobs
-87.74
 Araminta Hall
-88.05
 Sara Mackenzie
-88.39
 Margaret Read MacDonald
-88.48
 Carla Jablonski
-89.14
 Mary Downing Hahn
-89.47
 Robert Macfarlane
-89.61
 Robert Jackson
-89.68
 Jane Paley
-89.85
 Emily Hainsworth
-90.36
 Sari Padorr
-90.69
 Mary MacCracken
-90.74
 Michael Haag
-90.78
 Maxwell Mackenzie
-90.91
 Kevin MacAllister
-91.15
 Michael Jaime-Becerra
-91.38
 David Macfarlane
-91.46
 Jake Page
-91.51
 John Hornor Jacobs
-91.92
 H. JACKSON
-92.0
 Peter Maas
-92.85
 Keach Hagey
-93.21
 Sean Padraic
-93.22
 Sang Pak
-93.81
 Thomas Pakenham
-93.95
 Terrence J
-93.97
 Shane Jacobson
-94.75
 Hannah Paasch
-95.0
 Svetlana Palmer
-95.79
 Helen Palmer
-96.83
 Stuart B. MacBride
-97.54
 Wayne Pacelle
-97.83
 H3CZ
-98.13
 John Jacobs
-98.39
 Alison Mackey PhD
-98.56
 Amanda Mackenzie Stuart
-98.7
 Elaine Pagels
-98.87
 Tessa Hadley
-99.38
 Sammy Hagar
-99.46
 Keith Habersberger
-99.65
 Yamile Saied Méndez
-99.9
 Namita Jain
 Ruby Jackson
 Charles B. Macdonald
