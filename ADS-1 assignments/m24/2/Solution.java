@@ -27,9 +27,9 @@ public class Solution {
 					}
 				}
 			} else if (inpp[0].equals("LE")) {
-				System.out.println("hkjh");
+				// System.out.println("hkjh");
 				for (Double keys : st.keys()) {
-					System.out.println(keys);
+					// System.out.println(keys);
 					if (keys <= Double.parseDouble(inpp[1])) {
 						System.out.println(st.get(keys).getName());
 					}
@@ -59,9 +59,9 @@ class Studentdata {
 	public String getName() {
 		return name;
 	}
-	// public String getRollno() {
-	// 	return rollno;
-	// }
+	public int getRollno() {
+		return rollno;
+	}
 	public double getMarks() {
 		return totalmarks;
 	}
@@ -75,9 +75,12 @@ class Studentdata {
 			return 1;
 		} else if (this.getMarks() < that.getMarks()) {
 			return -1;
-		} else {
-			return (this.getName().compareTo(that.getName()));
+		} else if (this.getRollno() < that.getRollno()) {
+			return 1;
+		} else if (this.getRollno() < that.getRollno()) {
+			return -1;
 		}
+		return 0;
 	}
 
 }

@@ -24,8 +24,9 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:54:34: Parameter namee should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:54:48: Parameter totalmarkss should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:59:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:62:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:65:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:73:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\2\Solution.java:73:30: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 29 errors.
