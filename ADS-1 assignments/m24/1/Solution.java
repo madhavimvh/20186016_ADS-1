@@ -6,7 +6,7 @@ public class Solution {
 		int inp = Integer.parseInt(scan.nextLine());
 		for (int i = 0; i < inp; i++) {
 			String[] tokens = scan.nextLine().split(",");
-			st.put(Integer.parseInt(tokens[1]), new Studentdata(tokens[2], Double.parseDouble(tokens[3])));
+			st.put(Integer.parseInt(tokens[0]), new Studentdata(tokens[1], Double.parseDouble(tokens[2])));
 
 		}
 		int inpp = Integer.parseInt(scan.nextLine());

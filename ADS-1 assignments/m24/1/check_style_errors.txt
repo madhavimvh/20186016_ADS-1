@@ -6,7 +6,6 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:3:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:4: Line is longer than 80 characters (found 111). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:9: Line is longer than 80 characters (found 119). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:9:114: '3' is a magic number. [MagicNumber]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:18: Line is longer than 80 characters (found 107). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:20: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:22: Line has trailing spaces. [RegexpSingleline]
@@ -83,4 +82,4 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:282: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-1-Updated\20186016_ADS-1\ADS-1 assignments\m24\1\Solution.java:284: Line is longer than 80 characters (found 104). [LineLength]
 Audit done.
-Checkstyle ends with 83 errors.
+Checkstyle ends with 82 errors.
