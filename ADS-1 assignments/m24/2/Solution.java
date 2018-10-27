@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 class Studentdata implements Comparable<Studentdata> {
 	private int rollno;
 	private String name;
@@ -19,11 +18,6 @@ class Studentdata implements Comparable<Studentdata> {
 	public double getMarks() {
 		return totalmarks;
 	}
-	// public void query(String roll, int n) {
-	// 	if (n == 1) {
-
-	// 	}
-	// }
 	public int compareTo(Studentdata that) {
 		if (this.getMarks() > that.getMarks()) {
 			return 1;
