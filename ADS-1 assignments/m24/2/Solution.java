@@ -35,9 +35,9 @@ class Studentdata implements Comparable<Studentdata> {
 		// } else if (this.getName().compareTo(that.getName()) < 0) {
 		// 	return -1;
 		// }
-		if (this.getRollno() < that.getRollno()) {
+		if (this.getRollno() > that.getRollno()) {
 			return 1;
-		} else if (this.getRollno() > that.getRollno()) {
+		} else if (this.getRollno() < that.getRollno()) {
 			return -1;
 		} 
 		return 0;
