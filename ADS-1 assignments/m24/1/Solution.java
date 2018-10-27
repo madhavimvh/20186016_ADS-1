@@ -14,12 +14,14 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        LinearProbingHashST<Integer, Studentdata> st = new LinearProbingHashST<Integer, Studentdata>();
+        LinearProbingHashST<Integer, Studentdata> st =
+        new LinearProbingHashST<Integer, Studentdata>();
         Scanner scan = new Scanner(System.in);
         int inp = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < inp; i++) {
             String[] tokens = scan.nextLine().split(",");
-            st.put(Integer.parseInt(tokens[0]), new Studentdata(tokens[1], Double.parseDouble(tokens[2])));
+            st.put(Integer.parseInt(tokens[0]),
+                new Studentdata(tokens[1], Double.parseDouble(tokens[2])));
 
         }
         int inpp = Integer.parseInt(scan.nextLine());
@@ -28,20 +30,21 @@ public final class Solution {
             // st.query(tokenss[1], Integer.parseInt(tokenss[2]));
             if (Integer.parseInt(tokenss[2]) == 1) {
                 if (st.contains(Integer.parseInt(tokenss[1]))) {
-                    System.out.println(st.get(Integer.parseInt(tokenss[1])).getName());
+                    System.out.println(st.get(
+                        Integer.parseInt(tokenss[1])).getName());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
                 
             } else if (Integer.parseInt(tokenss[2]) == 2) {
                 if (st.contains(Integer.parseInt(tokenss[1]))) {
-                    System.out.println(st.get(Integer.parseInt(tokenss[1])).getMarks());
+                    System.out.println(st.get(
+                        Integer.parseInt(tokenss[1])).getMarks());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
             }
         }
-        
     }
 }
 /**
@@ -75,11 +78,11 @@ class Studentdata {
     public String getName() {
         return name;
     }
-    //
-    // public String getRollno() { return rollno; }
-    //
-    // @return     The marks.
-    //
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
     public double getMarks() {
         return totalmarks;
     }
