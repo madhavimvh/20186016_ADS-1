@@ -1,53 +1,7 @@
 import java.util.Scanner;
-public class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		RedBlackBST<Double, Studentdata> st = new RedBlackBST<Double, Studentdata>();
-		int inp = Integer.parseInt(scan.nextLine());
-		for (int i = 0; i < inp; i++) {
-			String[] tokens = scan.nextLine().split(",");
-			st.put(Double.parseDouble(tokens[2]), new Studentdata(Integer.parseInt(tokens[0]), tokens[1], Double.parseDouble(tokens[2])));
 
-		}
-		int intt = Integer.parseInt(scan.nextLine());
-		for (int i = 0; i < intt; i++) {
-			String[] inpp = scan.nextLine().split(" ");
-			if (inpp[0].equals("BE")) {
-				for (Double keys : st.keys()) {
-					if (keys >= Double.parseDouble(inpp[1]) && keys <= Double.parseDouble(inpp[2])) {
-						System.out.println(st.get(keys).getName());
-					}
-				}
-			} else if (inpp[0].equals("GE")) {
-				// System.out.println("hkjh");
-				for (Double keys : st.keys()) {
-					// System.out.println(keys);
-					if (keys >= Double.parseDouble(inpp[1])) {
-						System.out.println(st.get(keys).getName());
-					}
-				}
-			} else if (inpp[0].equals("LE")) {
-				// System.out.println("hkjh");
-				for (Double keys : st.keys()) {
-					// System.out.println(keys);
-					if (keys <= Double.parseDouble(inpp[1])) {
-						System.out.println(st.get(keys).getName());
-					}
-				}
-			}
-			// else if (inpp[0].equals("LE")) {
 
-			// 	}
-			// } else (inpp[0].equals("GE")) {
-			// 	for (int i = inpp[1]; i > 0; i--) {
-					
-			// 	}
-			}
-			
-		}
-	}
-
-class Studentdata {
+class Studentdata implements Comparable<Studentdata> {
 	private int rollno;
 	private String name;
 	private double totalmarks;
@@ -89,3 +43,50 @@ class Studentdata {
 	}
 
 }
+public class Solution {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		RedBlackBST<Studentdata, Double> st = new RedBlackBST<Studentdata, Double>();
+		int inp = Integer.parseInt(scan.nextLine());
+		for (int i = 0; i < inp; i++) {
+			String[] tokens = scan.nextLine().split(",");
+			st.put(new Studentdata(Integer.parseInt(tokens[0]), tokens[1], Double.parseDouble(tokens[2])), Double.parseDouble(tokens[2]));
+
+		}
+		int intt = Integer.parseInt(scan.nextLine());
+		for (int i = 0; i < intt; i++) {
+			String[] inpp = scan.nextLine().split(" ");
+			if (inpp[0].equals("BE")) {
+				for (Studentdata keys : st.keys()) {
+					if (keys.getMarks() >= Double.parseDouble(inpp[1]) && keys.getMarks() <= Double.parseDouble(inpp[2])) {
+						System.out.println(keys.getName());
+					}
+				}
+			} else if (inpp[0].equals("GE")) {
+				// System.out.println("hkjh");
+				for (Studentdata keys : st.keys()) {
+					// System.out.println(keys);
+					if (st.get(keys) >= Double.parseDouble(inpp[1])) {
+						System.out.println(keys.getName());
+					}
+				}
+			} else if (inpp[0].equals("LE")) {
+				// System.out.println("hkjh");
+				for (Studentdata keys : st.keys()) {
+					// System.out.println(keys);
+					if (st.get(keys) <= Double.parseDouble(inpp[1])) {
+						System.out.println(keys.getName());
+					}
+				}
+			}
+			// else if (inpp[0].equals("LE")) {
+
+			// 	}
+			// } else (inpp[0].equals("GE")) {
+			// 	for (int i = inpp[1]; i > 0; i--) {
+					
+			// 	}
+			}
+			
+		}
+	}
