@@ -4,12 +4,14 @@ Clark
 Rivest
 Dan
 Abegg
+
 Your Output: 
 Clark
 Rivest
 Dan
 Abegg
 ----------------------------------------
+
 ########## Testcase 1: Passed ##########
 Expected Output: 
 Clark
@@ -57,6 +59,7 @@ John
 Tim Cahill
 Abegg
 Brian Caffrey
+
 Your Output: 
 Clark
 Rhian Cahill
@@ -104,6 +107,7 @@ Tim Cahill
 Abegg
 Brian Caffrey
 ----------------------------------------
+
 ########## Testcase 2: Passed ##########
 Expected Output: 
 Steve Cafferty
@@ -168,6 +172,7 @@ Dan Caddy
 Neil Cadigan
 Megon
 Meili Cady
+
 Your Output: 
 Steve Cafferty
 Hank
@@ -232,6 +237,7 @@ Neil Cadigan
 Megon
 Meili Cady
 ----------------------------------------
+
 ########## Testcase 3: Passed ##########
 Expected Output: 
 Stuart B. MacBride
@@ -244,7 +250,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
@@ -538,7 +544,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
@@ -727,7 +733,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ruby Jackson
 Charles B. Macdonald
@@ -948,6 +954,7 @@ Daniel Palmer
 Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
+
 Your Output: 
 Stuart B. MacBride
 Wayne Pacelle
@@ -959,7 +966,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
@@ -1253,7 +1260,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
@@ -1442,7 +1449,7 @@ Elaine Pagels
 Tessa Hadley
 Sammy Hagar
 Keith Habersberger
-Yamile Saied Méndez
+Yamile Saied MÃ©ndez
 Namita Jain
 Ruby Jackson
 Charles B. Macdonald
@@ -1664,3 +1671,4 @@ Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
 ----------------------------------------
+
